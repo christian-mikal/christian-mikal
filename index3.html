@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Posten</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="tittel">
+        <h1>posten</h1>
+    </div>
+    <div id="meny">
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="index2.html">Produkt</a></li>
+            <li><a href="index3.html">Kontakt</a></li>
+            <li><a href="index4.html">Om oss</a></li>
+        </ul>
+    </div>
+
+    <div class="innhold">
+        <form id="skjema">
+
+            <br><label> Fornavn <input id="fornavn" type="text"> </label>
+
+            <br><label> Etternavn <input id="etternavn" type="text"> </label>
+
+            <br><label> Alder <input id="alder" type="number"> </label>
+
+            <br><label> Adresse <input id="adresse" type="text"> </label>
+
+            <br><button id="lagre" type="button">Lagre </button>
+
+        </form>
+
+        <div id="enID">
+            <table>
+                <tr>
+                    <th>Email</th>
+                    <td><img src="Bilder/gmail.png"></td>
+                    <td>posten@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Mobil</th>
+                    <td><img src="Bilder/mobil.png"></td>
+                    <td>767 83 676</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="bunn">
+        <table>
+
+            <tr>
+                <th> <a href="hjem.html">©2017 Posten Tysvær  </a> </th>
+                <th> <a href="https://www.thespruce.com/top-ten-tips-for-making-the-best-cookies-479848">Cookies  </a> </th>
+                <th> <a href="https://www.verisure.no/sem/vs/g/sikkerhet?gclid=Cj0KCQjw557NBRC9ARIsAHJvVVNNtB5ZjegoRS_w3tMjv0ajnaY5nJhtq0jE6kE3ezGrASSDhLJ6cbEaAt3rEALw_wcB&gclsrc=aw.ds#1">  Personvern og sikkerhet</a></th>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        let btn = document.getElementById("lagre")
+        btn.addEventListener("click", lagreData);
+
+
+        function lagreData() {
+            let fornavn = document.getElementById("fornavn").value;
+            let etternavn = document.getElementById("etternavn").value;
+            let alder = document.getElementById("alder").value;
+            let adresse = document.getElementById("adresse").value;
+            alert("Hei" + " " + fornavn + " " + etternavn +"."+" "+ "Jeg vet nå at du er" + " " + alder + " " + "år. " + " " + "Jeg vet også at du bor ved" + " "+ adresse + ".");
+        }
+    </script>
+</body>
+
+</html>
