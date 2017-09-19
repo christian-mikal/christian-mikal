@@ -129,12 +129,13 @@ table a:hover{
 color: #e32d22;
 }
 
+
 #enID table {
     border: solid 2px gray;
     border-collapse: collapse;
-    margin-left: 1%;
-    margin-top: 1%;
+    margin-top: 11em;
     bottom: 15px;
+    table-layout:center;
 
     }
 #enID tr:nth-child(odd) {
@@ -169,16 +170,12 @@ background: rgba(171, 171, 171, 0.80);
 }
 
 #skjema {
-     background-color:#e32d22;
-     color: white;
+     color: black;
      display: block;
      background-repeat:no-repeat;
      height: 171px;
      width: 100%;
-     font-family:calibri, Tahoma;
-     font-size:20px;
-     color:#ffffff;
+     font-size:18px;
      text-align: left;
-     font-weight: bold;
-     float: left;
+
 }
