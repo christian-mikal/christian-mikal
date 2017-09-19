@@ -4,7 +4,7 @@
     top: 0;
     width: 75px;
     height: 90px;
-    background:url('Bilder/postmanKatt.gif');
+    background:url('Bilder/postmanKatt.png');
     background-size: contain;
     background-repeat: no-repeat;
     animation: gaaTur 10s linear infinite;
