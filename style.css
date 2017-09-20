@@ -35,7 +35,6 @@
 }
         li a {
             display: block; 
-            overflow: auto;
             color: white;
             text-decoration: none;
             padding: 50px 25px;
@@ -57,7 +56,6 @@
     .innhold {
         position: absolute;
         overflow-y: scroll;
-        overflow: auto;
         overflow-wrap: wrap;
         left: 20%;
         bottom: 15%;
