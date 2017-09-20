@@ -19,6 +19,7 @@
 
 #meny {
     
+    overflow: auto;
     position: fixed;
     left: 0;
     bottom: 15%;
