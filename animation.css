@@ -1,0 +1,19 @@
+#animation {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 75px;
+    height: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: gaaTur 10s linear infinite;
+}
+
+ @keyframes gaaTur {
+    0% { top:80%; left: 0%; transform: rotate(10deg);}
+    20% { top: 40%; left: 20%;transform: rotate(-360deg);}
+    40% { top: 50%; left: 36%;transform: rotate(-160deg);}
+    60% { top: 80%; left: 57%;transform: rotate(-360deg);}
+    80% { top: 30%; left: 90%;transform: rotate(-760deg);}
+    100% { top: 80%; left: 0%;transform: rotate(-360deg);}
+    }
