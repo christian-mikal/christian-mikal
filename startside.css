@@ -1,4 +1,10 @@
-body {
+.tittel {
+    bottom: 20%;
+    color: blue;
 
-background: #6EBDC8; 
+}
+
+.innhold {
+    bottom: 80%;
+    color: yellow;
 }
