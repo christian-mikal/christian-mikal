@@ -11,18 +11,23 @@
 </head>
 
 <body>
-  <div mv-app="mavoTest" mv-storage="local">
-        	Name:
-            <span property="firstName">Lea</span>
-            <span property="last_name">Verou</span>
-        <br>
-        Gjøremål:
-        <ul>
-            <li property="todo" mv-multiple>Eating</li>
-        </ul>
-    </div>
-
-
+        <main mv-app="todo" mv-storage="local" mv-mode="edit">
+                <header>
+                    <h1>My tasks</h1>
+                    <p><strong>[count(done)]</strong> done out of <strong>[count(task)]</strong> total</p>
+                </header>
+            
+                <ul>
+                    <li property="task" mv-multiple>
+                        <label>
+                            <input property="done" type="checkbox" />
+                            <span property="taskTitle">Do stuff</span>
+                        </label>
+                    </li>
+                </ul>
+            
+            </main>
+            
 </body>
 
 </html>
