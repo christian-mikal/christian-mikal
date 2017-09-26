@@ -24,3 +24,8 @@
     height: 15%;
     background-size: contain;
 }
+
+img {
+    height: 15%;
+    width: 100%;
+}
