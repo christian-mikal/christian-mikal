@@ -6,16 +6,19 @@ h1 {
     font-size: 3em;
     color: white;
 }
-li {
-    
 
-}
 li a {
     text-decoration: none;
     font-size:2em;
+    color: black;
 }
-
-
+li {
+    list-style-type: none;
+}
+#rainbow {
+    font-size: 3em;
+    text-align: center;
+}
 #rainbow:hover {
     -webkit-animation:rainbow 1s infinite;
     -ms-animation:rainbow 1s infinite;
