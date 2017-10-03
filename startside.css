@@ -46,7 +46,9 @@ li a {
     color: firebrick;
 }
 
-li a:hover {
+li a:hover{
     background-color: black;
     color: white;
+
+    
 }
