@@ -1,79 +1,52 @@
 body {
-    background-color: rgba(105, 191, 255, 0.81);
+    background: url(bilder/hacker.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1; 
 }
 
 h1 {
-    font-size: 3em;
-    color: white;
+    font-size: 2em;
+    color: #1b8df2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 200px;
+    background-color: black;
+    justify-content: center;
+    margin-left:0;
+    width: 200px;
 }
 
 li a {
+    display: block;
+    color: #1b8df2;
+    padding: 8px 16px;
     text-decoration: none;
-    font-size:2em;
-    color: black;
 }
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #1b8df2;
+    color: white;
+}
+
+
+ul {
+    border: 1px solid #1b8df2;
+}
+
 li {
-    list-style-type: none;
-}
-#rainbow {
-    font-size: 3em;
     text-align: center;
+    border-bottom: 1px solid #1b8df2;
 }
-#rainbow:hover {
-    -webkit-animation:rainbow 1s infinite;
-    -ms-animation:rainbow 1s infinite;
-    -o-animation:rainbow 1s infinite;
-    animation:rainbow 1s infinite;
-    }
-    @-webkit-keyframes rainbow {
-    0% {color: #ff0000;}
-    10% {color: #ff8000;}
-    20% {color: #ffff00;}
-    30% {color: #80ff00;}
-    40% {color: #00ff00;}
-    50% {color: #00ff80;}
-    60% {color: #00ffff;}
-    70% {color: #0080ff;}
-    80% {color: #0000ff;}
-    90% {color: #8000ff;}
-    100% {color: #ff0080;}
-    }
-    @-ms-keyframes rainbow {
-    0% {color: #ff0000;}
-    10% {color: #ff8000;}
-    20% {color: #ffff00;}
-    30% {color: #80ff00;}
-    40% {color: #00ff00;}
-    50% {color: #00ff80;}
-    60% {color: #00ffff;}
-    70% {color: #0080ff;}
-    80% {color: #0000ff;}
-    90% {color: #8000ff;}
-    100% {color: #ff0080;}
-    }
-    @-o-keyframes rainbow {
-    0% {color: #ff0000;}
-    10% {color: #ff8000;}
-    20% {color: #ffff00;}
-    30% {color: #80ff00;}
-    40% {color: #00ff00;}
-    50% {color: #00ff80;}
-    60% {color: #00ffff;}
-    70% {color: #0080ff;}
-    80% {color: #0000ff;}
-    90% {color: #8000ff;}
-    100% {color: #ff0080;}
-    }
-    @keyframes rainbow {
-    0% {color: #ff0000;}
-    10% {color: #ff8000;}
-    20% {color: #ffff00;}
-    30% {color: #80ff00;}
-    40% {color: #00ff00;}
-    50% {color: #00ff80;}
-    60% {color: #00ffff;}
-    70% {color: #0080ff;}
-    80% {color: #0000ff;}
-    90% {color: #8000ff;}
-    100% {color: #ff0080;}
-    }
+
+li:last-child {
+    border-bottom: none;
+}
+
+
+
