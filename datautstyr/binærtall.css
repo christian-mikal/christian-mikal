@@ -20,3 +20,22 @@ padding: 1em;
     margin: 1em;
     padding: 0.5em;
     }
+
+    .animation {
+        border-radius: 50%;
+        border:solid 6px pink;
+        border-bottom:transparent;
+        border-left: transparent;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100px;
+        height: 100px;
+        background-repeat: no-repeat;
+        animation: spinner 1s  infinite;
+    }
+    
+     @keyframes spinner {
+        0% { top:30%; left: 30%; transform: rotate(-0deg);}
+        100% { top: 30%; left: 30%;transform: rotate(-360deg);}
+        }
