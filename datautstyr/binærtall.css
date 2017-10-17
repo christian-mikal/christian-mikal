@@ -1,0 +1,22 @@
+#main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+   h1 {
+       text-align: center;
+   }
+   a {
+text-decoration: none;
+list-style-type: none;
+color: black;
+padding: 1em;
+   }
+    #main div {
+    background: skyblue;
+    width: 20em;
+    min-height: 20em;
+    margin: 1em;
+    padding: 0.5em;
+    }
