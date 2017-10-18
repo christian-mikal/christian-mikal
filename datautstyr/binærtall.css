@@ -8,8 +8,7 @@
        text-align: center;
    }
    a {
-text-decoration: none;
-list-style-type: none;
+
 color: black;
 padding: 1em;
    }
@@ -32,10 +31,11 @@ padding: 1em;
         width: 100px;
         height: 100px;
         background-repeat: no-repeat;
-        animation: spinner 1s  infinite;
+        animation: spinner 4s  infinite;
     }
     
      @keyframes spinner {
-        0% { top:30%; left: 30%; transform: rotate(-0deg);}
-        100% { top: 30%; left: 30%;transform: rotate(-360deg);}
+        0% { top:5%; left: 0%; transform: rotate(-0deg);}
+        100% { top:5%; left: 0%;transform: rotate(-2880deg);}
+
         }
