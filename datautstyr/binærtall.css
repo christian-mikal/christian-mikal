@@ -6,15 +6,24 @@
     }
    h1 {
        text-align: center;
+       background-color: rgba(2, 5, 5, 0.27);
+       color: white;
    }
+   body {
+    background: url(bilder/hacker.jpg);
+    position: absolute;
+    background-repeat:repeat;
+    background-size: cover;
+    z-index: 1; 
+}
    a {
 
-color: black;
+color:white;
 padding: 1em;
    }
     #main div {
-    background: skyblue;
-    width: 20em;
+    background:#1b8df2;
+    min-width: 20em;
     min-height: 20em;
     margin: 1em;
     padding: 0.5em;

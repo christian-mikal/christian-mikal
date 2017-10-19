@@ -8,7 +8,7 @@ body {
 
 h1 {
     font-size: 2em;
-    color: #1b8df2;
+    color: white;
 }
 
 ul {
@@ -52,7 +52,7 @@ li:last-child {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-ietween;
     }
     #main div {
     background: red;
