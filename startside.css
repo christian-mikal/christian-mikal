@@ -49,6 +49,18 @@ li a {
 li a:hover{
     background-color: black;
     color: white;
-
-    
+}
+#tv {
+    position: fixed;
+    top: 50%;
+    left:0%;
+    width: 150px;
+    height:100px;
+}
+#intro {
+    position: fixed;
+    top: 50.3%;
+    left:0.2%;
+    width: 147px;
+    height:83px;
 }
