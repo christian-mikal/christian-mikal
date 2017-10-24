@@ -24,6 +24,7 @@ padding: 1em;
     #main div {
     background:#1b8df2;
     min-width: 20em;
+    max-width: 45em;
     min-height: 20em;
     margin: 1em;
     padding: 0.5em;
