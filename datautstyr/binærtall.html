@@ -9,10 +9,10 @@
 
 <body>
     <h1>Binærtall, Transistor og Byte</h1>
-    
+
     <a href="datautstyr.html">tilbake</a>
     <div id="main">
-    
+
         <div>
             <h1>Binærtall</h1>
             Binær er et tallsystem. I tallsystemet vi bruker til vanlig er det ti tall: 0 1 2 3 4 5 6 7 8 9. Dette er det desimale tallsystemet.
@@ -40,8 +40,58 @@
             frem til gjennom prøving og feiling. Man kan se på en byte som en byggestein i bokstav- og tallsystemet man bruker
             for å gjøre det enklere å programmere. Binære tall
 
+            <p>
+                Som nevnt kalles 1 binært siffer for en bit. 8 bits kalles 1 byte.
+            </p>
+            <p>
+                En byte kan inneholde tallverdier fra 0 til 255. En byte brukes ofte til å representere ett tegn fra et tegnsett.
+            </p>
+            <p>
+
+                I starten brukte datamaskiner tegnsettet ASCII som var 7 bit (128 forskjellige tegn) Dette ble senere utvida til ANSI (256
+                tegn) Nå bruker vi UTF-8, hvor hvert tegn kan bruke fra 1 til 4 bytes.
+            </p>
+            <p>
+                Noen programmer bruker fortsatt eldre tegnsett - slik at vi får problemer når vi publiserer,
+            </p>
+            <p>
+                typisk blir ÆØÅøæå til &#rølp;
+            </p>
+            <p>
+                På en nettside må vi bruker
+                <meta charset="UTF-8"> for at vi skal kunne bruke øæå uten problemer.
+            </p>
         </div>
 
+
+
+        <div>
+            <h1>Binærtall og Byte</h1>
+            <p>Datamaskiner bruker binærtall internt (CPU bruker binærtall)
+            </p>
+            <p>
+                Et binærtall slik som 11011011 kan konverteres til desimal slik:
+            </p>
+            <p>
+                128 64 32 16 8 4 2 1 1 1 0 1 1 0 1 1</p>
+
+            <p>
+                Summer 128+64+16+8+2+1 (der hvor binærtallet har siffer 1).
+            </p>
+            <p>
+                Et binærtall kan konverteres til hex på denne måten:
+            </p>
+
+            <p>Grupper binærtallet i grupper på 4 bits (1 bit er et binært siffer, 0 eller 1)</p>
+
+            <p>Skriv over tallfølgen 8 4 2 1 ( som vi gjør for konvertering til desimal)
+
+                <p>For hver gruppe på 4 bits får vi da et hexadesimalt siffer </p>
+
+                <p> 0-9 er uendra, 10=A,11=B, ... 15=F </p>
+
+                <img src="https://www.tutorialspoint.com/ipv6/images/Hexadecimal_conversion_table.jpg">
+        </div>
     </div>
 </body>
 
