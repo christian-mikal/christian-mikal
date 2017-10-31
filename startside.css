@@ -82,9 +82,7 @@ li a:hover{
     text-decoration: none;
 }
 
-#nabohoyre ul {
-    -webkit-padding-start: 0;
-}
+
 
 #nabohoyre li {
     display: block;
@@ -105,10 +103,6 @@ li a:hover{
     left: 10px;
     top: 5px;
     text-decoration: none;
-}
-
-#nabovenstre ul {
-    -webkit-padding-start: 0;
 }
 
 #nabovenstreli {
