@@ -20,7 +20,16 @@
     color:white;
     font-size:2em;
     padding:20px;
-    
+}
+.nabo {
+    position: absolute;
+    top:0;
+    left: 0;
+    width:12%;
+    height: 20%;
+    background-color:black;
+    font-size:1em;
+    padding:20px;
 }
 #bilde {
     position: absolute;
