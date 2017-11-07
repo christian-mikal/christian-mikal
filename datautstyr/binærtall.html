@@ -73,7 +73,7 @@
                 Et binærtall slik som 11011011 kan konverteres til desimal slik:
             </p>
             <p>
-                128 64 32 16 8 4 2 1 <br> 1 1  0  1  1  0  1  1</p>
+                128 64 32 16 8 4 2 1 <br> 1 1 0 1 1 0 1 1</p>
 
             <p>
                 Summer 128+64+16+8+2+1 (der hvor binærtallet har siffer 1).
@@ -92,6 +92,180 @@
 
                 <img src="https://www.tutorialspoint.com/ipv6/images/Hexadecimal_conversion_table.jpg">
         </div>
+        <div>
+            <div>
+                <h3>Binærtall</h3>
+                Det binære tallsystem (også totallsystemet) representerer numeriske verdier ved å bruke to symboler, som oftest sifrene 0
+                og 1.
+                <br> Har grunntallet 2</br>
+
+            </div>
+
+
+            <div>
+                <h3>Bits</h3>
+                <p>En bit er den minste regneenheten i en datamaskin, og den har enten verdien ett eller null.
+                </p>
+
+            </div>
+            <div>
+                <h3>Byte </h3>
+                En byte er definert som åtte bitser, det vil si en kombinasjon av åtte ettall eller nuller, som 10001101.
+
+            </div>
+
+
+            <div>
+                <h3>Konventering til Binærtall</h3>
+
+                Gjør om tall til 0 eller 1
+
+            </div>
+            <div>
+                <h3>Konventering til Heksadeimal</h3>
+                Gjør om tall til 0-9, A, B,C, D, E, F
+                <br> Heksadeimal har grunntall 16 </br>
+
+            </div>
+
+            <div>
+                <h3>Ascii</h3>
+                Ascii er et tegnsett, det vil si en standard for utveksling av tekst mellom datamaskiner.
+                <h3>Utff8</h3>
+                UTF-8 Unicode er en nummerert samling av tegn, og UTF-8 representerer disse numrene med mellom en og fire byte, og er konstruert
+                slik at de første 128 tegnene (U+0000 til U+007F), samsvarer nøyaktig med US-ASCII-standarden.
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+    <div>
+        <h2>Binærtall</h2>
+        <p>
+            Alle datamaskiner og alle andre elektroniske instrumenter bruker teknologi
+            <br> som hviler på totallsystemet, også kalt det binære tallsystemet. Binærtall
+            <br> er språket elektronikken kommuniserer med.
+        </p>
+        Et binærtall konverteres til desimaltall på denne måten:
+        <h4>Eks: 10010111</h4>
+        <table border="1">
+            <tr>
+                <td>
+                    <mark>128</mark>
+                </td>
+                <td>64</td>
+                <td>32</td>
+                <td>
+                    <mark>16</mark>
+                </td>
+                <td>8</td>
+                <td>
+                    <mark>4</mark>
+                </td>
+                <td>
+                    <mark>2</mark>
+                </td>
+                <td>
+                    <mark>1</mark>
+                </td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p> Summer tallene der binærtallet har siffer 1: 128+16+4+2+1
+    </div>
+    <div>
+        <h2>Bits, bytes og tegnsett</h2>
+        Bits opptrer sjelden enkeltvis i en datamaskin. De er neste alltid samlet sammen i samlinger på åtte. Når du grupperer åtte
+        bits sammen får du en byte. Altså <b>1 byte = 8 bits</b>. Denne inndelingen er noe man har kommet frem til
+        gjennom prøving og feiling. Man kan se på en byte som en byggestein i bokstav- og tallsystemet man bruker for å gjøre
+        det enklere å programmere.
+        <p>
+            En byte kan inneholde tallverdier fra 0 til 255.
+            <p>
+                En byte brukes ofte til å representere ett tegn fra et tegnsett. I starten brukte datamaskiner tegnsettet ASCII som var 7
+                bit (128 forskjellige tegn) Nå bruker vi <b>UTF-8</b>, hvor hvert tegn kan bruke fra 1 til
+                4 bytes.
+    </div>
+    <div>
+        <h2>Heksadesimale tall</h2>
+        Sekstentallsystemet, bedre kjent som det heksadesimale tallsystemet, forkortet hex, er et tallsystem med grunntall eller
+        base 16. Tallsystemet har 16 ulike siffer: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E og F. Det tallsystemet vi
+        bruker til vanlig, kalles titallsystemet eller det desimale system. De heksadesimale sifrene A, B, C, D, E og F representerer
+        titallsystemets verdier 10, 11, 12, 13, 14 og 15.
+        <p>Binærtall kan koverteres til heksadeismale tall slik:
+            <ul>
+                <li>Grupper binærtallet i grupper på 4 bits</li>
+                <li>Skriv over tallfølgen: 1, 2, 4, 8 slik som med desimaltall</li>
+                <li>For hver gruppe får vi da et heksaadesimalt siffer</li>
+                <li>0-9 er uendra, 10=A, 11=B, 12=C ... 15=F</li>
+            </ul>
+            <h4>Eks: 1101</h4>
+            <table border="1">
+                <tr>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <p>Vi summmerer da 8+4+1=13, 13 = D
+    </div>
+    <div>
+        <h2>CPU og transistorer</h2>
+        <table border="1">
+            <tr>
+                <td></td>
+                <td>1990</td>
+                <td>2000</td>
+                <td>2010</td>
+                <td>2017</td>
+            </tr>
+            <tr>
+                <td>CPU</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Antall transistorer</td>
+                <td>1,200,000</td>
+                <td>42,000,000</td>
+                <td>1,400,000,000</td>
+                <td>19,200,000,000</td>
+            </tr>
+        </table>
+        <p>
+            Transistor er en elektronisk komponent som brukes sammen med andre elektroniske komponenter til å forsterke eller generere
+            signaler, eller som en bryter for å slå på og av signaler eller energitransport. Den har tre tilkoplinger og
+            er fremstilt av et halvlederkrystall. To av tilkoplingene brukes til å styre strømmen som går gjennom den tredje
+            tilkoplingen og en av styretilkoplingene. Den styrte energien er større enn den som trengs til å styre, noe som
+            gir energetisk forsterkning av et signal. Transistoren brukes både i analoge og i digitale kretser. Transistorer
+            kan finnes som enkeltkomponenter pakket i et hus med tilkoplinger, eller de kan, sammen med ledningsføring og
+            andre komponenter, pakkes tett sammen i et stort antall inne i en funksjonell enhet, kalt en integrert krets.
+    </div>
+    </div>
+    </div>
     </div>
 </body>
 
