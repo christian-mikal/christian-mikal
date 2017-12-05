@@ -1,0 +1,62 @@
+:root {
+    --fyll:10px;
+}
+
+
+
+
+header {
+    color: #242466;
+    font-size: 1.2em;
+    padding: var(--fyll);
+    padding-bottom:20px;
+    text-align: center;
+}
+
+article {
+    font-size: 1.1em;
+    padding: var(--fyll);
+}
+
+#liste {
+    width: 90vw;
+    min-height: 10vh;
+    border:2px solid #4E4E88;
+}
+
+.kunde {
+    background-color: whitesmoke;
+}
+
+#dyr{
+    width: 90vw;
+    min-height: 50vh;
+    border:2px solid #4E4E88;
+    background-color: whitesmoke;
+}
+#dyr li:nth-child(odd) {
+    background-color: grey;
+}
+#dyr li:nth-child(even) {
+    background-color:darkgrey;
+}
+
+#produkt {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+    
+.innhold {
+    position: flex;
+    overflow-y: scroll;
+    overflow-wrap: wrap;
+    left: 0;
+    bottom: 40%;
+    width: 100%;
+    height: 60%;
+    background-color:#E1E1E1;
+    color:black;
+   
+}
+
