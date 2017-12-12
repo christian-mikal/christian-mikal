@@ -1,0 +1,50 @@
+
+#sky {
+background: linear-gradient(black, green, darkblue, lightblue, white );
+width: 100%;
+height: 50%;
+display: grid;
+grid-template-columns: repeat(13, 1fr);
+grid-gap: 40px;
+grid-auto-rows: minmax(40px, auto);
+}
+
+.star {
+width: 10px;
+height: 10px;
+background-color: yellow;
+border-radius: 50%;
+}
+
+#snow {
+width: 100%;
+height: 20em;
+background-image: url("snow-hills.jpg");
+background-size: 1282px;
+background-repeat: no-repeat; 
+background-position-y: -630px;   
+}
+
+.santa {
+    background-image: url("santa.gif");
+    width: 100%;
+    height: 20em;
+    background-repeat: no-repeat;
+    background-position: 60%;
+}
+
+#santa2 {
+    position: absolute;
+    left: -200px;
+    background-image: url("santa2.gif");
+    top:50px;
+    width:500px;
+    background-repeat: no-repeat;
+    height: 200px;
+    animation: drive 5s  alternate infinite;
+}
+
+@keyframes  drive {
+    0% {left: -200px;}
+    100% {left: 120%;}
+}
