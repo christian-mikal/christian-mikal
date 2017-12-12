@@ -1,6 +1,6 @@
 
 #sky {
-background: linear-gradient(black, green, darkblue, lightblue, white );
+background: linear-gradient(black, green, darkblue, lightblue, white);
 width: 100%;
 height: 50%;
 display: grid;
@@ -10,13 +10,22 @@ grid-auto-rows: minmax(40px, auto);
 }
 
 .star {
+position:relative;
+top: 0px;
+left: 0px;
 width: 10px;
 height: 10px;
 background-color: yellow;
 border-radius: 50%;
+animation: stjerneblink 2s linear infinite;
 }
-
+@keyframes stjerneblink {
+    0% {width:1px; height:1px;}
+    50% {width:3px; height:3px;}
+    100% {width:1px; height:1px;}
+    }
 #snow {
+position: relative;
 width: 100%;
 height: 20em;
 background-image: url("snow-hills.jpg");
@@ -41,10 +50,30 @@ background-position-y: -630px;
     width:500px;
     background-repeat: no-repeat;
     height: 200px;
-    animation: drive 5s  alternate infinite;
+    animation: drive 6s  linear infinite;
+    background-size: 100%;
+
 }
 
 @keyframes  drive {
-    0% {left: -200px;}
-    100% {left: 120%;}
+    0% {left: 150vw;}
+    80% {left:0; top:10px;}
+    100% {top: -200px;}
+}
+
+.pakke {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 8px;
+    height: 30px;
+    background-color:red;
+    border-left:solid greenyellow 21px;
+    border-right: solid greenyellow 21px;
+    animation: pakke 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes pakke {
+    0% {top:20%; }
+    100% {top:50%;}
 }
