@@ -17,12 +17,12 @@ width: 10px;
 height: 10px;
 background-color: yellow;
 border-radius: 50%;
-animation: stjerneblink 2s linear infinite;
+animation: stjerneblink 1s alternate linear infinite;
 }
 @keyframes stjerneblink {
-    0% {width:1px; height:1px;}
-    50% {width:3px; height:3px;}
-    100% {width:1px; height:1px;}
+    0% {width:0px; height:0px; background-color: #ffffd2;}
+    50% {width:1px; height:1px;}
+    100% {width:0px; height:0px; background-color: white;}
     }
 #snow {
 position: relative;
@@ -65,15 +65,32 @@ background-position-y: -630px;
     position: absolute;
     left: 0px;
     top: 0px;
-    width: 8px;
-    height: 30px;
-    background-color:red;
-    border-left:solid greenyellow 21px;
-    border-right: solid greenyellow 21px;
-    animation: pakke 1s ease-in-out;
+    width: 50px;
+    height: 50px;
+    animation: drop 2s ease-in-out;
+    animation-fill-mode: forwards;
+    background-image: url("julepakke.png");
+    background-size: contain;
+}
+@keyframes drop {
+ 
+    0% {top:100px; }
+    100% {top:47%;}
+}
+
+.snow {
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    animation: dale 5s linear infinite;
     animation-fill-mode: forwards;
 }
-@keyframes pakke {
-    0% {top:20%; }
-    100% {top:50%;}
+
+@keyframes dale {
+    0% {top:0%; }
+    100% {top:100%;}
 }
