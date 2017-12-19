@@ -77,7 +77,7 @@ background-position-y: -630px;
     0% {top:100px; }
     100% {top:47%;}
 }
-
+.powder,
 .snow {
     position: absolute;
     left: 0px;
@@ -89,8 +89,39 @@ background-position-y: -630px;
     animation: dale 5s linear infinite;
     animation-fill-mode: forwards;
 }
+.powder {
+    top: 300px;
+    animation: fyke 5s linear infinite;
+}
 
 @keyframes dale {
     0% {top:0%; }
     100% {top:100%;}
 }
+
+@keyframes fyke {
+    0% {left:80px; top:300px;}
+    10% {left:90px; top:320px;}
+    20% {left:100px; top:330px;}
+    30% {left:110px; top:340px;}
+    40% {left:120px; top:350px;}
+    50% {left:130px; top:340px;}
+    60% {left:120px; top:330px;}
+    70% {left:100px; top:320px;}
+    80% {left:100px; top:310px;}
+    90% {left:100px; top:300px;}
+    100% {left:110px; top:500px;}
+}
+
+#kanon {
+    position: absolute;
+    left: 208px;
+    bottom: -182px;
+    width: 20em;
+    height: 20em;
+    background-image: url("kanon.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+
+
