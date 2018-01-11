@@ -1,0 +1,133 @@
+
+
+#main {
+    display:grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-column-gap: 15px;
+    grid-gap: 2em;
+    grid-auto-rows: minmax(60px,auto);
+    
+}
+
+#main h4 {
+    text-align: center;
+    color: #4F9A9C;
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+.box1:hover {
+    background-image: linear-gradient(to right, white, #F5F5F5);
+}
+.box2:hover {
+    background-image: linear-gradient(to right, white, #F5F5F5);
+}
+.box3:hover {
+    background-image: linear-gradient(to right, white, #F5F5F5);
+}
+.box1
+{
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: darkorange;
+    text-align: center;
+	position: relative;
+	width: 200px;
+    padding: 5px;
+    height: 2em;
+    margin: 2em;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.box1:before, .box1:after
+{
+	position: absolute;
+	width: 40%;
+	height: 10px;
+	content: ' ';
+	left: 12px;
+	bottom: 12px;
+	background: transparent;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	z-index: -1;
+} 
+
+.box1:after
+{
+	left: auto;
+	right: 12px;
+	transform: skew(5deg) rotate(5deg);
+}
+
+.box2
+{
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: darkorchid;
+    text-align: center;
+	position: relative;
+	width: 200px;
+    padding: 5px;
+    height: 2em;
+    margin: 2em;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.box2:before, .box2:after
+{
+	position: absolute;
+	width: 40%;
+	height: 10px;
+	content: ' ';
+	left: 12px;
+	bottom: 12px;
+	background: transparent;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	z-index: -1;
+} 
+
+.box2:after
+{
+	left: auto;
+	right: 12px;
+	transform: skew(5deg) rotate(5deg);
+}
+
+.box3
+{
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: darkblue;
+    text-align: center;
+	position: relative;
+	width: 200px;
+    padding: 5px;
+    height: 5em;
+    margin: 2em;
+    border: solid 1px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.box3:before, .box3:after
+{
+	position: absolute;
+	width: 40%;
+	height: 10px;
+	content: ' ';
+	left: 12px;
+	bottom: 12px;
+	background: transparent;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	z-index: -1;
+} 
+
+.box3:after
+{
+	left: auto;
+	right: 12px;
+	transform: skew(5deg) rotate(5deg);
+}
