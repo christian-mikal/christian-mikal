@@ -1,0 +1,10 @@
+#iframe {
+    position: absolute;
+   top: 0%;
+   right: 0%;
+   margin: 2em;
+   background-color: white;
+}
+body {
+    background-color: rgba(197, 234, 240, 0.73);
+}

@@ -13,13 +13,45 @@
 
 <body>
     <div id="main">
-        <form>
-            <br> Land<input id="land" type="text">
-            <br>Region<input id="region" type="text">
-            <p><button id="lagre">Legg til land </button>
-            </p>
-        </form>
+        <div>
+            <h4>Rediger land</h4>
+
+            <form>
+                <br> Land<input id="land" type="text">
+                <br>Region<input id="region" type="text">
+                <p>
+                    <button type="button" id="lagreland">Legg til land </button>
+                </p>
+            </form>
+        </div>
+
+        <div>
+            <h4>Rediger Kort</h4>
+            <form>
+                <br> Kort <input id="kort" type="text">
+                <br>Antall<input id="antallnye" type="number">
+                <p>
+                    <button type="button" id="lagrekort">Legg til kort</button>
+                </p>
+            </form>
+        </div>
+
+        <div>
+            <h4>Rediger spiller</h4>
+            <form>
+                <br> Username<input id="spiller" type="text">
+                <br> Navn<input id="navn" type="text">
+                <br> Alder<input id="alder" type="number">
+                <br> Farge<input id="farge" type="text">
+
+                <p>
+                    <button type="button" id="lagrespiller">Legg til spiller</button>
+                </p>
+            </form>
+        </div>
+        <a href="risk.html">tilbake</a>
     </div>
+    <iframe id="iframe" src="risk.html" height="500" width="750"></iframe>
 
     <script>
         setup();
