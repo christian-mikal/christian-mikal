@@ -8,3 +8,11 @@
 body {
     background-color: rgba(197, 234, 240, 0.73);
 }
+
+#main form div{
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-gap: 1em;
+    width: 12em;
+    margin: 2px;
+}
