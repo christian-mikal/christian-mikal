@@ -1,0 +1,104 @@
+#mekaniker {
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+    height: 100vh;
+    width: 100vw;
+}
+
+#gammelbil {
+    position: absolute;
+    left: 0px;
+    top: calc(100vh - 170px);
+    width: 290px;
+    background-image: url("nybil.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+
+
+#nybil {
+    animation: liftdowncar 2s 9s forwards linear, driveout 3s 12s forwards;
+}
+#gammelbil {
+    animation: drivein 3s forwards, liftupbil 3s 3s forwards linear, hide 1s forwards 9s;
+}
+
+
+@keyframes liftdowncar {
+    0%   {top: 344px; background-image: url("bil.png"); width: 290px;
+        height: 300px;  background-size: contain;
+        background-repeat: no-repeat; left: 60vw;}
+    100% {top: calc(100vh - 170px);  background-image: url("bil.png"); width: 290px;
+        height: 300px;  background-size: contain;
+        background-repeat: no-repeat; left: 60vw;}
+}
+
+@keyframes hide {
+    0%{top: 0; left: 130%}
+    100% {top:0; left: 130%;}
+}
+
+
+@keyframes drivein {
+    0% {
+        left: 0px;
+        bottom: 0px;
+    }
+    100% {
+        left: 60vw;
+        bottom: 0px;
+    }
+}
+
+@keyframes liftup {
+  
+    100% {
+       top: 463px;
+    }
+}
+
+@keyframes liftupbil {
+    
+      100% {
+         top: 344px;
+      }
+  }
+
+@keyframes liftdown {
+    0% { top: 463px; }
+      100% {
+        top: calc(100vh - 47px);
+      }
+  }
+
+
+#lift {
+    position: absolute;
+    width: 32vw;
+    height: 30px;
+    top: calc(100vh - 47px);
+    left: 59vw;
+    background-color: black;
+    border-radius: 5px;
+    animation: liftup 3s 3s forwards linear, liftdown 2s 9s forwards linear;
+}
+#stang1 {
+    position: absolute;
+    width: 20px;
+    height: 200px;
+    left: 58vw;
+    border-radius: 5px;
+    background-color: black;
+    bottom: 17px;
+}
+#stang2 {
+    position: absolute;
+    width: 20px;
+    height: 200px;
+    left: 90vw;
+    border-radius: 5px;
+    background-color: black;
+    bottom: 17px;
+}

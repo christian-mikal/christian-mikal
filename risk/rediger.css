@@ -1,18 +1,86 @@
 #iframe {
     position: absolute;
-   top: 0%;
-   right: 0%;
-   margin: 2em;
-   background-color: white;
+    bottom: 0;
+    left: 0;
+    width: 97vw;
+    background-color: white;
+    margin: 10px;
 }
+
 body {
     background-color: rgba(197, 234, 240, 0.73);
 }
 
-#main form div{
+#main form div {
     display: grid;
     grid-template-columns: 3fr 5fr;
     grid-gap: 1em;
     width: 12em;
     margin: 2px;
+}
+
+#main {
+    width: 49vw;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border: solid 1px green;
+}
+
+#sonic {
+    width: 49vw;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 100vh;
+}
+
+#sprite {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 256px;
+    height: 256px;
+    background-image: url("sonic.png");
+   /* background-position-x: 0px;
+    background-position-y: 0px;
+    */
+}
+
+#sprite {
+    animation: step 400ms infinite steps(6),
+    walk 3s alternate infinite linear, 
+    flipper 6s infinite linear;
+}
+
+@keyframes step {
+    100% {
+        background-position-x: -1536px;
+    }
+}
+
+@keyframes walk {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        left: 200px;
+        top: 600px;
+    }
+}
+
+@keyframes flipper {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(1);
+    }
+    50.1% {
+        transform: scaleX(-1);
+    }
+    100% {
+        transform: scaleX(-1);
+    }
 }

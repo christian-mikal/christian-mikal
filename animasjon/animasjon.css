@@ -1,0 +1,68 @@
+#mann {
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+    height: 100vh;
+    width: 100vw;
+}
+
+#sprite {
+    position: absolute;
+    left: 0px;
+    top: calc(100vh - 120px);
+    width: 110px;
+    height: 110px;
+    background-image: url("walking.png");
+    background-position-x: 0px;
+    background-position-y: -223px;
+}
+
+#sprite {
+    animation: step 0.8s infinite steps(8), walk 12s alternate infinite linear, flipper 6s infinite linear;
+}
+
+@keyframes step {
+    100% {
+        background-position-x: -894px;
+    }
+}
+
+@keyframes walk {
+    0% {
+        left: 0px;
+        bottom: 0px;
+    }
+    100% {
+        left: 70vw;
+        bottom: 0px;
+    }
+}
+
+
+/*
+@keyframes flipper {
+    0% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(1);
+    }
+    50.1% {
+        transform: scaleX(-1);
+    }
+    100% {
+        transform: scaleX(-1);
+    }
+}
+*/
+
+
+#boks {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: solid grey 1px;
+    top: calc(100vh - 30px);
+    left: 75vw;
+    border-radius: 3px;
+}
