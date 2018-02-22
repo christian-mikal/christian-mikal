@@ -1,0 +1,122 @@
+#brett {
+    width: calc( 50px * 8);
+    height: calc(50px * 8);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    border: solid black 1px;
+}
+
+#brett div {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+
+#brett div:nth-child(odd) {
+    background-color: black;
+}
+
+#brett div:nth-child(2n+9) {
+    background-color: white;
+}
+
+#brett div:nth-child(2n+10) {
+    background-color: black;
+}
+
+#brett div:nth-child(2n+18) {
+    background-color: white;
+}
+
+#brett div:nth-child(2n+17) {
+    background-color: black;
+}
+
+#brett div:nth-child(2n+25) {
+    background-color: white;
+}
+
+#brett div:nth-child(2n+26) {
+    background-color: black;
+}
+
+#brett div:nth-child(2n+34) {
+    background-color: white;
+}
+
+#brett div:nth-child(2n+33) {
+    background-color: black;
+}
+
+#brett div:nth-child(2n+41) {
+    background-color: white;
+}
+
+#brett div:nth-child(2n+42) {
+    background-color: black;
+}
+
+#brett div:nth-child(2n+50) {
+    background-color: white;
+}
+
+#brett div:nth-child(2n+49) {
+    background-color: black;
+}
+
+#brett div:nth-child(2n+57) {
+    background-color: white;
+}
+
+#brett div:nth-child(2n+58) {
+    background-color: black;
+}
+
+div.bondehvit:after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: calc((50px - 30px) / 2);
+    height: 10px;
+    width: 30px;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+div.bondehvit:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: calc((50px - 25px) / 2);
+    height: 30px;
+    width: 25px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px grey;
+}
+
+div.bondesvart:after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: calc((50px - 30px) / 2);
+    height: 10px;
+    width: 30px;
+    background-color: #0D0B0B;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+div.bondesvart:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: calc((50px - 25px) / 2);
+    height: 30px;
+    width: 25px;
+    background-color: #241E1E;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px grey;
+}
