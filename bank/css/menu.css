@@ -1,0 +1,57 @@
+
+div ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+div ul li {
+	display:inline-block;
+	}
+
+div a {
+	display:block;
+	padding: 0;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 68px;
+	text-decoration:none;
+}
+
+div a:hover { 
+	background-color: grey; 
+}
+
+/* Hide Dropdowns by Default */
+div ul ul {
+	display: none;
+	position: absolute; 
+	top: 68px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+div ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+div ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

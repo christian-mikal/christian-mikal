@@ -1,0 +1,50 @@
+header {
+    position: absolute;
+ width: 100vw;
+ background-color: #edd9c0;
+ height: 15vh;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    color: #FFFFFF;
+}
+
+
+#menu {
+    position: absolute;
+    top: 0;
+    height: 10vh;
+    width: 100vw;
+
+}
+#main {
+position: absolute;
+top: 15vh;
+background-color: #c9d8c5;
+width: 100vw;
+height: 70vh;
+}
+
+footer {
+    position: absolute;
+    top: 85vh;
+    width: 100vw;
+    height: 15vh;
+    background-color: #7d4627;
+    }
+    
+.flex-menu {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+
+.flex-menu > div a{
+        background-color:#a8b6bf;
+        width: 25vw;
+        text-align: center;
+        line-height: 68px;
+        font-size: 30px;
+      }
