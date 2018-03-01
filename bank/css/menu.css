@@ -16,11 +16,13 @@ div a {
 	color:#FFF;
 	font-size:20px;
 	line-height: 68px;
-	text-decoration:none;
+    text-decoration:none;
+    
 }
 
 div a:hover { 
-	background-color: grey; 
+    background-color: grey; 
+
 }
 
 /* Hide Dropdowns by Default */
@@ -32,7 +34,8 @@ div ul ul {
 	
 /* Display Dropdowns on Hover */
 div ul li:hover > ul {
-	display:inherit;
+    display:inherit;
+
 }
 	
 /* Fisrt Tier Dropdown */
