@@ -1,0 +1,78 @@
+
+
+.bilde {
+    position: absolute;
+    width: calc(90vw - -64px);
+    height: calc(90vh - 204px);
+    left: 25%;
+    top: 10vh;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    z-index: 1;
+    transition: 1s;
+}
+
+#b1 {
+    background-image: url("../bilder/g1.jpg");
+    height: 380px;
+    width:600px;
+}
+
+#b2 {
+    background-image: url("../bilder/g2.jpg");
+    height: 370px;
+    width:600px;
+}
+
+#b3 {
+    background-image: url("../bilder/g3.jpg");
+    height: 370px;
+    width:600px;
+}
+
+#b4 {
+    background-image: url("../bilder/g4.jpg");
+    height: 370px;
+    width:600px;
+}
+
+#b5 {
+    background-image: url("../bilder/g5.jpg");
+    height: 370px;
+    width:600px;
+}
+
+#r1:checked~#b1 {
+    opacity: 1;
+}
+
+#r2:checked~#b2 {
+    opacity: 1;
+}
+
+#r3:checked~#b3 {
+    opacity: 1;
+}
+
+#r4:checked~#b4 {
+    opacity: 1;
+}
+
+#r5:checked~#b5 {
+    opacity: 1;
+}
+
+#galleri input {
+    position: relative;
+    z-index: 9;
+    margin-top: 30%;
+    background-color: rgba(20, 20, 90, 0.3);
+    left: 5%;
+}
+
+#r1 {
+    margin-left: calc((90vw - 100px) / 2);
+}
+
+*/

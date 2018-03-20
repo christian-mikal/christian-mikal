@@ -1,0 +1,19 @@
+
+
+#main form div {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-gap: 1em;
+    width: 12em;
+    margin: 2px;
+}
+
+#main form div {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    grid-gap: 1em;
+    width: 12em;
+    margin: 2px;
+}
+
+

@@ -16,9 +16,9 @@
   }
   .item2 {
     grid-area: 1 / 2 / 4 / 6;
-    background-image: url("../bilder/fotball.jpg");
     background-size:  cover;
     background-repeat: no-repeat;
+    background-image: url("../bilder/fotball.jpg");
   }
 
   .item3 {
