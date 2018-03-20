@@ -35,7 +35,7 @@ function setup() {
             if (kontoene) {
                 let kontonr = Object.keys(kontoene);
                 let kontoliste = `<ul>` +
-                    kontonr.map(e => `<li>Saldo:${kontoene[e].saldo}Kr </li>`).join("")
+                    kontonr.map(e => `<li>Saldo:${kontoene[e].saldo}Kr</li>`).join("")
                     + `</ul>`;
                 divKonto.innerHTML = kontoliste;
 
