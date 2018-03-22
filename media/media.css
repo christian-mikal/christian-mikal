@@ -58,7 +58,7 @@
 img {
 
     width: 200px;
-    height: 200px;
+    height: 150px;
 }
 
 @media all and (max-width: 450px) {
