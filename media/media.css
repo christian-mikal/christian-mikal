@@ -55,8 +55,8 @@
     
 }
 
-div {
-    background-size: contain;
-    width: 100px;
-    height: 100px;
+img {
+
+    width: 200px;
+    height: 200px;
 }
