@@ -17,6 +17,14 @@
     background-position-y: -223px;
 }
 
+#fugl{
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+    height: 100vh;
+    width: 100vw;
+}
+
 #sprite {
     animation: step 0.8s infinite steps(8), walk 12s alternate infinite linear, flipper 6s infinite linear;
 }

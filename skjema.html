@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="skjema.css">
+    <script src="skjema.js"></script>
+    <title>Skjema-Demo</title>
+</head>
+
+<body>
+    <h1>Skjema</h1>
+    <div id="header"></div>
+    <div id="main">
+        <form id="registrer">
+            <label>
+                Skriv inn navn
+                <input type="text" id="navn">
+            </label>
+            <label>Skriv inn alder<input type="number" max=120 min=1 id="alder">
+            </label>
+            <label>
+                Skriv inn klasse
+                <input type="text" id="klasse">
+            </label>
+            <label>
+                Skriv inn mobil
+                <input type="number" id="mobil">
+            </label>
+            <label>
+                Skriv inn epost
+                <input type="text" id="epost">
+            </label>
+            <label>
+                Skriv inn adresse
+                <input type="text" id="adresse">
+            </label>
+            <label>Bekreft<button type="button" id="lagre">Lagre</button></label>
+
+        </form>
+    </div>
+
+    <div id="footer">
+
+        <output id="melding"></output>
+
+    </div>
+
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>
