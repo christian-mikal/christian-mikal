@@ -12,9 +12,9 @@ function setup() {
 function regnUt(e) {
     let svar1 = inpSvar1.value;
     if (svar1 == random1 + random2) { 
-        outMelding.innerHTML = `Det er rett`; 
+        outMelding.innerHTML = "<span style='font-size:50px; background-color=blue;'>Det er riktig...</span>"; 
     }
-    else {outMelding.innerHTML = `Det er feil`;
+    else {outMelding.innerHTML = `<span style='font-size:50px'>Det er desverre feil...</span>`;
 }   
 }
 }

@@ -1,6 +1,6 @@
 
 body {
-    background-color:rgb(148, 240, 194);
+    background-color:rgb(189, 189, 189);
 }
 
 form {
@@ -8,11 +8,10 @@ form {
     max-width: 85%;
     padding: 5px; 
     border-radius: 5px;
-    background-color: blueviolet;
+    background-color: rgb(163, 161, 156);
     border:solid gray 1px;
     position: relative;
 }
-
 
 
 form > label  {
@@ -21,12 +20,12 @@ form > label  {
     margin: 5px; 
     padding: 5px; 
     border-radius: 5px;
-    background-color: blanchedalmond;
+    background-color: rgb(123, 179, 216);
     border:solid gray 1px;
 }
 
 form:after {
-    color:blue;
+    color:rgb(223, 248, 227);
     content: "vansklige spørsmål";
     position: absolute;
     right: 20px;
