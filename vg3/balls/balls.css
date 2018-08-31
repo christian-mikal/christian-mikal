@@ -1,0 +1,27 @@
+#main {
+    background-color: red;
+    width: 600px;
+    height: 600px;
+}
+
+#board {
+    position: relative;
+    left: 25px;
+    top: 25px;
+    background-image: url("russia.gif");
+    background-size: cover;
+    width: 550px;
+    height: 550px;
+}
+
+div.ball {
+position:absolute;
+width: 26px;
+top: 0;
+left: 0;
+background-image: url("USSR.png");
+background-size: cover;
+height: 26px;
+border-radius: 50%;
+
+}
