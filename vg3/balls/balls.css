@@ -1,5 +1,5 @@
 #main {
-    background-color: red;
+    background:linear-gradient(pink, blue, purple, green, yellow);
     width: 600px;
     height: 600px;
 }
@@ -19,7 +19,8 @@ position:absolute;
 width: 26px;
 top: 0;
 left: 0;
-background-image: url("USSR.png");
+background-color: red;
+/*background-image: url("USSR.png");*/
 background-size: cover;
 height: 26px;
 border-radius: 50%;
