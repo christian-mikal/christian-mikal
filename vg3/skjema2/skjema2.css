@@ -1,0 +1,54 @@
+#skjema {
+    background-color: honeydew;
+}
+
+#sokker{
+    color: black;
+    background-color: skyblue;
+    
+}
+h1{
+    font-family: fantasy;
+    font-size: 100px;
+}
+#sko{
+    color:black;
+    background-color: skyblue;
+
+}
+#pistoler{
+    color: black;
+    background-color:skyblue;
+
+}
+form {
+    font-family: fantasy;
+    width: 30em;
+    max-width: 85%;
+    padding: 5px; 
+    border-radius: 5px;
+    background-color: blanchedalmond;
+    border:solid gray 1px;
+    position: relative;
+}
+
+
+
+form > label  {
+    display: grid; 
+    grid-template-columns: -1fr 1fr;
+    margin: 5px; 
+    padding: 5px; 
+    border-radius: 5px;
+    background-color: aliceblue;
+    font-family: fantasy;
+    border:solid gray 1px;
+}
+
+#main {
+    color: black;
+    background-color: honeydew;
+    font-family: fantasy;
+    height: 55vh;
+
+}

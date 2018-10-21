@@ -1,0 +1,29 @@
+#side1, #side2 {
+    background-color: greenyellow;
+    min-width: 40em;
+    min-height: 20em;
+}
+
+#ramme {
+    width: 16cm;
+    height: 60vh;
+    top: 70%;
+    left: 2em;
+    border: solid 1px black;
+    border-radius: 5px; 
+    margin-top: 1.2cm;
+}
+#side1.hidden, #side2.hidden {
+    display:none;
+}
+
+.faner {
+    position: relative;
+    height: 16px;
+    display: inline-block;
+    border: solid black 1px;
+    top: -22px;
+    padding: 2px;
+    border-radius: 5px;
+}
+

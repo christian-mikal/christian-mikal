@@ -1,0 +1,109 @@
+body {
+    background: white;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#fil1 {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 600px;
+    background-color: red;
+}
+
+#fil2 {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 200px;
+    right: 400px;
+    background-color: blue;
+}
+
+#fil3 {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 400px;
+    right: 200px;
+    background-color: green;
+}
+
+#fil4 {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 600px;
+    right: 0px;
+    background-color: yellow;
+}
+
+#road {
+    position: absolute;
+    height: 110%;
+    width: 800px;
+    left: 29%;
+    top: -1em;
+    background-image: black;
+}
+
+#alpha {
+    right: 1vh;
+    top: 1vh;
+    position: absolute;
+}
+
+.fire h2 {
+    font-size: 1em;
+    color: black;
+    font-weight: bold;
+    text-shadow: 5px 1px rgba(199, 163, 2, 0);
+    z-index: -1;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    font: normal 30px/normal "Courier", Helvetica, sans-serif;
+    font-weight: bold;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    text-shadow: 0 0 20px rgb(254, 252, 201), 10px -10px 30px rgb(254, 236, 133), -20px -20px 40px rgb(255, 174, 52), 20px -40px 50px rgb(236, 118, 12), -20px -60px 60px rgb(205, 70, 6), 0 -80px 70px rgb(151, 55, 22), 10px -90px 80px rgb(69, 27, 14);
+}
+
+.fire {
+    z-index: 2;
+    position: absolute;
+    left: 5vh;
+    top: 5vh;
+    font-size: 2.9em;
+    color: black;
+    font-weight: bold;
+    text-shadow: 5px 1px rgb(199, 163, 2);
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    text-shadow: 0 0 20px rgb(254, 252, 201), 10px -10px 30px rgb(254, 236, 133), -20px -20px 40px rgb(255, 174, 52), 20px -40px 50px rgb(236, 118, 12), -20px -60px 60px rgb(205, 70, 6), 0 -80px 70px rgb(151, 55, 22), 10px -90px 80px rgb(69, 27, 14);
+}
+
+#car {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left: 50px;
+    top:490px;
+    background-image: url("bil.png");
+    transform: scaleY(-1);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#alpha {
+    position: absolute;
+    z-index: 2;
+}

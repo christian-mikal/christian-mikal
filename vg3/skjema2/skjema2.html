@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="skjema2.css">
+    <script src="skjema2.js"></script>
+    <title>Et lite skjema</title>
+</head>
+
+<body>
+    <div id="skjema">
+        <h1>varer</h1>
+        <form id="handlekurv">
+            <label> Hvor mange par sko ønsker du?
+                    <input type="number" max=120 min=1 id="sko">
+                </label>
+            </label>
+            <label> Hvor mange par sokker ønsker du?
+                    <input type="number" max=120 min=1 id="sokker">
+                </label>
+            </label>
+
+            <label> Hvor mange pistoler ønsker du?
+                    <input type="number" max=120 min=2 id="pistoler">
+                </label>
+            </label>
+            
+
+            <label>
+                <button type="button" id="lagre">
+                    lagre
+                </button>
+            </label>
+        </form>
+
+    </div>
+
+    <div id="main">
+        <br>
+        <output id="melding"></output>
+
+    </div>
+
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>

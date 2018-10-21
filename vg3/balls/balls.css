@@ -1,5 +1,5 @@
 #main {
-    background:linear-gradient(pink, blue, purple, green, yellow);
+    background:conic-gradient(gray, darkgrey, gray, darkgrey, gray, darkgrey,gray, darkgrey,gray, darkgrey,gray, darkgrey, gray);
     width: 600px;
     height: 600px;
 }
@@ -19,10 +19,9 @@ position:absolute;
 width: 26px;
 top: 0;
 left: 0;
-background-color: red;
-/*background-image: url("USSR.png");*/
+background-image: url("USSR.png");
 background-size: cover;
 height: 26px;
 border-radius: 50%;
-
 }
+
