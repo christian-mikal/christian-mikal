@@ -1,25 +1,66 @@
-body {
-    background-color:rgb(189, 189, 189);
-}  
-
-form {
-    width: 20em;
-    left: 37%;
-    top: 200px;
-    padding: 5px; 
-    border-radius: 5px;
-    background-color: rgb(163, 161, 156);
-    border:solid gray 1px;
+div.knapp > div {
     position: relative;
-}
-
-
-form > label  {
-    display: grid;  
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 5px; 
-    padding: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    margin-top: 10px;
     border-radius: 5px;
-    background-color: rgb(123, 179, 216);
-    border:solid gray 1px;
+    border: solid gray 1px;
+    box-shadow: 2px 2px 2px rgb(190, 186, 186);
+    transition: 0.3s;
 }
+
+div.knapp > div:active {
+    box-shadow: none;
+    left: 2px;
+    top: 2px;
+}
+
+
+div.knapp > div:after {
+    position: absolute;
+    content: attr(data-disp);
+    color:blue;
+}
+
+#tallene > div {
+    background-color: teal;
+    color: white;
+}
+
+#tallene {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 150px;
+}
+
+#display > input {
+    width: 12em;
+    background-color: antiquewhite;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+#display > input.active {
+    background-color: rgb(221, 205, 185);
+}
+
+#knapper {
+    width: 30em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#operatorer {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width: 100px;
+    margin-left: -90px;
+}
+
+#operatorer > div {
+    background-color:lightblue;
+}
+

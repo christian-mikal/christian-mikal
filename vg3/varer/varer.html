@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="varer.css">
+    <script src="varer.js"></script>
+    <title>Varer</title>
+</head>
+
+<body>
+    <h1>Kjøp litt varer da vell</h1>
+    <div id="registrer">
+        <form id="reg">
+            <label>Varer<select id="varer">
+                    <option value="" selected></option>
+                    <option value="elektro" id="elektro">Elektro</option>
+                    <option value="kler" id="kler">Klær</option>
+                    <option value="brus" id="brus">Brus</option>
+
+                </select>
+            </label>
+
+            <label id="elektrodiv" class="elektroting" class="varer" for="elektro"> <div id="radio">radio <input type="radio"
+                        name="vare"></div>
+                <div id="tv">tv <input type="radio" name="vare"></div>
+                <div id="pc">pc <input type="radio" name="vare"></div></label>
+
+            <label id="klerdiv" class="klerting" class="varer" for="kler"> <div id="hatt">hatt <input type="radio" name="vare"></div>
+                <div id="sko">sko <input type="radio" name="vare"></div>
+                <div id="slips">slips <input type="radio" name="vare"></div></label>
+
+            <label id="brusdiv" class="brusting" class="varer" for="brus"> <div id="cola">cola <input type="radio" name="vare"></div>
+            </label>
+
+
+            <label for="antall">Antall<input type="number" id="antall"></label>
+            <label for="lagre"><button type="button" id="lagre">Bestill</button></label>
+        </form>
+
+        <div id="melding"></div>
+    </div>
+    <div id="oversikt">
+
+    </div>
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>

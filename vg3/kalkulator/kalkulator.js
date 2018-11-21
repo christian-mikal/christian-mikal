@@ -1,49 +1,111 @@
 // @ts-check
 
 function setup() {
-    let outMelding = document.querySelector("#melding");
+    let divTallene = document.getElementById("tallene");
+    let divOperatorer = document.getElementById("operatorer");
+    let inpDisplay = document.querySelector("#display > input");
 
+    let nyttTall = true;
+    let verdi = 0;
+    let operator = "";
 
-    let btnEn = document.getElementById("en");
-    btnEn.addEventListener("click", regnUt);
-    let btnTo = document.getElementById("to");
-    btnTo.addEventListener("click", regnUt);
-    let btnTre = document.getElementById("tre");
-    btnTre.addEventListener("click", regnUt);
-    let btnFire = document.getElementById("fire");
-    btnFire.addEventListener("click", regnUt);
-    let btnFem = document.getElementById("fem");
-    btnFem.addEventListener("click", regnUt);
-    let btnSeks = document.getElementById("seks");
-    btnSeks.addEventListener("click", regnUt);
-    let btnSyv = document.getElementById("syv");
-    btnSyv.addEventListener("click", regnUt);
-    let btnÅtte = document.getElementById("åtte");
-    btnÅtte.addEventListener("click", regnUt);
-    let btnNi = document.getElementById("ni");
-    btnNi.addEventListener("click", regnUt);
-    let btnNull = document.getElementById("null");
-    btnNull.addEventListener("click", regnUt);
+    divTallene.addEventListener("click", lesTall);
+    divOperatorer.addEventListener("click", operer);
 
-    let btnMinus = document.getElementById("minus");
-    btnMinus.addEventListener("click", regnUt);
-    let btnClear = document.getElementById("clear");
-    btnClear.addEventListener("click", regnUt);
-    let btnDele = document.getElementById("dele");
-    btnDele.addEventListener("click", regnUt);
-    let btnPlus = document.getElementById("plus");
-    btnPlus.addEventListener("click", regnUt);
-    let btnBeregn = document.getElementById("beregn");
-    btnBeregn.addEventListener("click", regnUt);
+    function lesTall(e) {
+        let t = e.target;
+        if (t.className === "tall") {
+            if (nyttTall) {
+                inpDisplay.value = "";
+                nyttTall = false;
+                blink();
+            }
+            inpDisplay.value += t.innerHTML;
+        }
+    }
 
+    function beregn() {
+        nyttTall = true;
+        blink();
+        switch(operator) {
+            case "+":
+            verdi += Number(inpDisplay.value);
+            inpDisplay.value = String(verdi);
+            break;
+            case "*":
+            verdi *= Number(inpDisplay.value);
+            inpDisplay.value = String(verdi);
+            break;
+            case "/":
+            verdi /= Number(inpDisplay.value);
+            inpDisplay.value = String(verdi);
+            break;
+            case "-":
+            verdi -= Number(inpDisplay.value);
+            inpDisplay.value = String(verdi);
+            break;
+            case "sin":
+            verdi = Math.sin(inpDisplay.value);
+            inpDisplay.value = String(verdi);
+            break;
+            case "cos":
+            verdi = Math.cos(inpDisplay.value);
+            inpDisplay.value = String(verdi);
+            break;
+            case "tan":
+            verdi = Math.tan(inpDisplay.value);
+            inpDisplay.value = String(verdi);
+            break;
+        }
+        verdi = Number(inpDisplay.value);
+        operator = "";
+    }
 
+    function operer(e) {
+        let t = e.target;
+        if (t.className === "op") {
+            beregn();
+            let id = t.id;
+            switch(id) {
+                case "opC":
+                  break;
+                case "opAC":
+                  inpDisplay.value = "0";
+                  nyttTall = true;
+                  verdi = 0;
+                  operator = "";
+                  break;
+                case "opPluss":
+                operator = "+";
+                  break;
+                case "opErlik":
+                  break;
+                default:
+                  break;
 
-
-    function regnUt(e) {
-        let btnEn = btnEn.value;
-        alert("hei");
-
+                  case "opMinus":
+                  operator = "-"
+                  break;
+                  case "opGange":
+                  operator = "*";
+                  break;
+                  case "opSin":
+                  operator = "sin";
+                  break;
+                  case "opCos":
+                  operator = "cos";
+                  break;
+                  case "opTan":
+                  operator = "tan";
+                  break;
+                  case "opDele":
+                  operator = "/";
+                  break;
+            }
+        }
+    }
+    function blink() {
+        inpDisplay.classList.add("active")
+        setTimeout( () => inpDisplay.classList.remove("active"), 40);
     }
 }
-
-

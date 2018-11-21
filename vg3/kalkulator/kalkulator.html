@@ -5,46 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalkulator</title>
     <link rel="stylesheet" href="kalkulator.css">
     <script src="kalkulator.js"></script>
-    <title>Kalkulator</title>
 </head>
 
 <body>
-    <div id="header">
-    </div>
-    <div id="main">
-        <form>
-            <label id="tekst">tekst</label>
-            <label><button type="button" id="null">0</button><button type="button" id="minus">-</button> <button type="button" id="clear">C</button><button type="button" id="dele">/</button></label>
-            <label><button type="button" id="syv">7</button><button type="button" id="åtte">8</button><button type="button"
-                    id="ni">9</button><button type="button" id="gange">X</button></label>
-            <label><button type="button" id="fire">4</button><button type="button" id="fem">5</button><button type="button"
-                    id="seks">6</button><button type="button" id="plus">+</button></label>
-            <label><button type="button" id="en">1</button><button type="button" id="to">2</button><button type="button"
-                    id="tre">3</button><button type="button" id="beregn">=</button></label>
-            
-        </form>
+    <div id="kalk">
+        <div id="display">
+            <input type="text" value="0">
+        </div>
+        <div id="knapper">
+            <div id="tallene"  class="knapp">
+                <div id="t01" class="tall">7</div>
+                <div id="t02" class="tall">8</div>
+                <div id="t03" class="tall">9</div>
+                <div id="t04" class="tall">4</div>
+                <div id="t05" class="tall">5</div>
+                <div id="t06" class="tall">6</div>
+                <div id="t07" class="tall">1</div>
+                <div id="t08" class="tall">2</div>
+                <div id="t09" class="tall">3</div>
+                <div id="t10" class="tall">0</div>
+            </div>
+            <div id="operatorer" class="knapp">
+                <div class="op" id="opC" data-disp="C"></div>
+                <div class="op" id="opAC" data-disp="AC"></div>
+                <div class="op" id="opPluss" data-disp="+"></div>
+                <div class="op" id="opMinus" data-disp="-"></div>
+                <div class="op" id="opGange" data-disp="*""></div>
+                <div class="op" id="opDele" data-disp="/"></div>
+                <div class="op" id="opSin" data-disp="sin"></div>
+                <div class="op" id="opCos" data-disp="cos"></div>
+                <div class="op" id="opTan" data-disp="tan"></div>
+                <div class="op" id="opErlik" data-disp="="></div>
+            </div>
+        </div>
 
-        <form name="kalkulator">
-            <table>
-                <thead>ye
-                        <tr>i</tr> 
-                        <tr>i</tr>
-                        <tr>i</tr>
-                </thead>
-                
-            </table>
-
-        </form>
-    </div>
-    <div id="footer">
-        <output id="melding"></output>
     </div>
 
     <script>
         setup();
     </script>
+
 </body>
 
 </html>

@@ -11,31 +11,14 @@
 </head>
 
 <body>
-    <div id="skjema">
-        <form>
-            Navn:
-            <input type="text" name="navn" id="navn"> <br> Alder:
-            <input type="number" name="alder" id="alder"> <br> kjønn
-            <select name="kjonn" id="kjonn">kjønn
-                <option value="gutt">Gutt</option>
-                <option value="jente">Jente</option>
-            </select>
-            <br> vekt:
-            <input type="number" name="vekt" id="vekt">
-            <br>
-            <button type="button" id="lagre">Lagre</button>
-          
-
+    <div id="registrer">
+        <form id="reg">
+            <label for="navn">Navn<input type="text" id="navn"></label>
+            <label for="adresse">Adresse<input type="text" id="adresse"></label>
+            <label for="alder">Alder<input type="number" id="alder"></label>
+            <label for="lagre"> <button id="lagre">Lagre</button></label>
         </form>
     </div>
-    <div id="main">
-
-        
-    </div>
-    <div id="oppsumering">
-        
-    </div>
-
 
 
     <script>
