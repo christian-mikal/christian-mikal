@@ -5,20 +5,9 @@ form {
     padding: 5px;
     border-radius: 5px;
     border: solid gray 1px;
-    background-color: pink;
+    background-color: skyblue;
 }
-
 form > label {
-    display: grid;
-    grid-template-columns: 7fr 4fr;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 5px;
-    border: solid gray 1px;
-    background-color: antiquewhite;
-}
-
-form > label.varer {
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
     margin: 5px;
@@ -27,6 +16,19 @@ form > label.varer {
     border: solid gray 1px;
     background-color: whitesmoke;
 }
+
+
+form > label {
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid gray 1px;
+    background-color: mistyrose;
+}
+
+
 
 
 form::after {

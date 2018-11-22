@@ -56,13 +56,12 @@ function setup() {
         }
 
 
-        let innhold = "";
-
+        let innhold = "<ol>";
         innhold += `Du er :${b.alder} år, og har bestillit dagskort for dager:${b.dager}  
            Prisen din er ${pris}kr
            Rabatten din er ${rabatt}kr`;
 
-        innhold += "";
+        innhold += "</ol>";
         divOversikt.innerHTML = innhold;
     }
 }
