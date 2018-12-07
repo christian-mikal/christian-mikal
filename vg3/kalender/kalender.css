@@ -1,0 +1,50 @@
+#year, #month {
+    position: relative;
+    width: 20em;
+    border: solid gray 1px;
+    height: 2em;
+    text-align:center;
+
+}
+body {
+    background-color: azure;
+}
+
+#ydiv, #mdiv {
+    display:grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    justify-items: center; 
+}
+
+#nextm, #prevm,
+#nexty, #prevy {
+  width: 2em;
+  height: 2em;
+  background-color: yellow;
+  text-align: center;
+}
+
+#kalender {
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+#dagene,
+#ddiv {
+    width: 18em;
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center; 
+}
+
+#dagene > div {
+   color: royalblue;
+    min-width: 10px;
+    min-height: 10px;
+    margin: 2px;
+}
+
+.merk {
+    border: solid red 1px; 
+    border-radius: 50%;
+}

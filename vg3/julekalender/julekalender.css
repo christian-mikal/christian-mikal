@@ -1,0 +1,35 @@
+#bakgrunn {
+    position: absolute;
+    border: 2px solid black;
+    width: 90vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-image: url("bakgrunn.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.luke {
+    position: relative;
+    text-shadow: white 0px 0px 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px; 
+    color: greenyellow;
+    font-size: 2em;
+    border: 1px solid royalblue;
+    
+}
+
+
+#visluke {
+    width: 500px;
+    height: 500px;
+    display: none;
+    position: absolute;
+    background-size: cover;
+    top: 10em;
+    left: 10em;
+    background-repeat: no-repeat;
+}
