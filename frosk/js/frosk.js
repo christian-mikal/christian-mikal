@@ -10,9 +10,15 @@ function setup() {
     let svar = document.getElementById("sesvar");
     svar.addEventListener("click", seSvar);
     
-    function seSvar() {
+
+    function seSvar(){
         document.getElementById("spm").style.display = "none";
-        document.getElementById("melding").innerHTML = "Du vil ikke inngå et tvangsekteskap!"
+        var randomWords = ["Ja", "Nei", "Kanskje"];
+    
+        var randomIndex = Math.floor(Math.random() * 3);//creates random No. from 1 - 3
+    
+        document.getElementById("melding").innerHTML = randomWords[randomIndex];
+        //the problem
     }
 
     let alder = document.getElementById("alder");
