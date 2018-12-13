@@ -5,6 +5,13 @@ function setup() {
     document.getElementById("resten").style.display = "none";
     document.getElementById("spm").style.display = "none";
 
+    let svar = document.getElementById("sesvar");
+    svar.addEventListener("click", seSvar);
+    
+    function seSvar() {
+        console.log(radio.value);
+    }
+
     let alder = document.getElementById("alder");
     let lagre = document.getElementById("lagreAlder");
     lagre.addEventListener("click", lagreAlder);
@@ -37,18 +44,19 @@ function setup() {
     let question2B = document.getElementById("question-2-answers-B");
     question2B.addEventListener("click", visResten);
 
+    let question3A = document.getElementById("question-3-answers-A");
+
     function visResten() {
 
         document.getElementById("resten").style.display = "block";
     }
 
     function vegetarianer() {
-        location.href = "https://steaks.com/";
+        location.href = "../html/error.html";
     }
 
     function goAway() {
-        alert("Dra deg til helvette vekk fra denne serrøise nettsiden som handler om frosker og ikke om kvinnemennesker!!! DU ER MOTBYDELIG!!!");
-        location.href = "http://www.partridgegetslucky.com/";
+        location.href = "../html/error.html";
         return;
 
     }
