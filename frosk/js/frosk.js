@@ -4,20 +4,30 @@ function setup() {
 
     document.getElementById("resten").style.display = "none";
     document.getElementById("spm").style.display = "none";
+    document.getElementById("spm2").style.display = "none";
+
 
     let svar = document.getElementById("sesvar");
     svar.addEventListener("click", seSvar);
     
     function seSvar() {
-        console.log(radio.value);
+        document.getElementById("spm").style.display = "none";
+        document.getElementById("melding").innerHTML = "Du vil ikke inngå et tvangsekteskap!"
     }
 
     let alder = document.getElementById("alder");
     let lagre = document.getElementById("lagreAlder");
     lagre.addEventListener("click", lagreAlder);
+
+    let mann = document.getElementById("question-1-answers-A");
+    mann.addEventListener("click", visSpm2);
+
+    function visSpm2() {
+        document.getElementById("spm2").style.display = "block";
+    }
     
     function lagreAlder() {
-        if (alder.value > 10){
+        if (alder.value > 10 ){
             document.getElementById("sjekk").style.display = "none";
             document.getElementById("spm").style.display = "block";
             var source = "../media/fortnite.mp3"
@@ -44,7 +54,6 @@ function setup() {
     let question2B = document.getElementById("question-2-answers-B");
     question2B.addEventListener("click", visResten);
 
-    let question3A = document.getElementById("question-3-answers-A");
 
     function visResten() {
 

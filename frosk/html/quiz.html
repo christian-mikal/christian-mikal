@@ -16,11 +16,11 @@
 
     <h1>Sjekk om du noen gang vil inngå tvangsekteskap</h1>
 
-<div id="sjekk">Alder:<input type="text" id="alder">
-<button type="button" id="lagreAlder">Lagre</button> </div>
+    <div id="sjekk">Alder:<input type="text" id="alder">
+        <button type="button" id="lagreAlder">Lagre</button> </div>
 
     <div id="spm">
-            <audio id="audio" src="../media/fortnite.mp3"></audio>
+        <audio id="audio" src="../media/fortnite.mp3"></audio>
         <form id="quiz">
 
             <ol>
@@ -42,22 +42,25 @@
 
 
                 </li>
+        
+                <div id="spm2">
+                    <li>
 
-                <li>
+                        <h3>Er du vegiterianer?</h3>
 
-                    <h3>Er du vegiterianer?</h3>
+                        <div>
+                            <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
+                            <label for="question-2-answers-A">Ja</label>
+                        </div>
 
-                    <div>
-                        <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
-                        <label for="question-2-answers-A">Ja</label>
-                    </div>
+                        <div>
+                            <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
+                            <label for="question-2-answers-B">Nei</label>
+                        </div>
 
-                    <div>
-                        <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
-                        <label for="question-2-answers-B">Nei</label>
-                    </div>
+                    </li>
 
-                </li>
+                </div>
 
                 <div id="resten">
 
@@ -130,6 +133,7 @@
         </form>
     </div>
 </div>
+<div id="melding"></div>
 
 
 <script>
