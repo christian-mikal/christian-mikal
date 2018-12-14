@@ -21,9 +21,7 @@ function setup() {
         //the problem
     }
 
-    let alder = document.getElementById("alder");
-    let lagre = document.getElementById("lagreAlder");
-    lagre.addEventListener("click", lagreAlder);
+    
 
     let mann = document.getElementById("question-1-answers-A");
     mann.addEventListener("click", visSpm2);
@@ -32,6 +30,20 @@ function setup() {
         document.getElementById("spm2").style.display = "block";
     }
     
+    let alder = document.getElementById("alder");
+    let lagre = document.getElementById("lagreAlder");
+    lagre.addEventListener("click", lagreAlder);
+
+    alder.addEventListener("keyup", function(event) {
+        // Cancel the default action, if needed
+        event.preventDefault();
+        // Number 13 is the "Enter" key on the keyboard
+        if (event.keyCode === 13) {
+          // Trigger the button element with a click
+          document.getElementById("lagreAlder").click();
+        }
+      });
+
     function lagreAlder() {
         if (alder.value > 10 ){
             document.getElementById("sjekk").style.display = "none";
