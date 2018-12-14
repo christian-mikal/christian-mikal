@@ -59,6 +59,9 @@ function setup() {
             }, true);
             audio.src = source;
         }
+        else {
+            alert("Skriv alderen din")
+        }
     }
     
     
