@@ -9,19 +9,19 @@ function setup() {
 
     let svar = document.getElementById("sesvar");
     svar.addEventListener("click", seSvar);
-    
 
-    function seSvar(){
+
+    function seSvar() {
         document.getElementById("spm").style.display = "none";
         var randomWords = ["Ja", "Nei", "Kanskje"];
-    
+
         var randomIndex = Math.floor(Math.random() * 3);//creates random No. from 1 - 3
-    
+
         document.getElementById("melding").innerHTML = randomWords[randomIndex];
         //the problem
     }
 
-    
+
 
     let mann = document.getElementById("question-1-answers-A");
     mann.addEventListener("click", visSpm2);
@@ -29,23 +29,23 @@ function setup() {
     function visSpm2() {
         document.getElementById("spm2").style.display = "block";
     }
-    
+
     let alder = document.getElementById("alder");
     let lagre = document.getElementById("lagreAlder");
     lagre.addEventListener("click", lagreAlder);
 
-    alder.addEventListener("keyup", function(event) {
+    alder.addEventListener("keyup", function (event) {
         // Cancel the default action, if needed
         event.preventDefault();
         // Number 13 is the "Enter" key on the keyboard
         if (event.keyCode === 13) {
-          // Trigger the button element with a click
-          document.getElementById("lagreAlder").click();
+            // Trigger the button element with a click
+            document.getElementById("lagreAlder").click();
         }
-      });
+    });
 
     function lagreAlder() {
-        if (alder.value > 10 ){
+        if (alder.value > 10) {
             document.getElementById("sjekk").style.display = "none";
             document.getElementById("spm").style.display = "block";
             var source = "../media/fortnite.mp3"
@@ -54,8 +54,8 @@ function setup() {
             audio.autoplay = true;
             //
             audio.load()
-            audio.addEventListener("load", function() { 
-                audio.play(); 
+            audio.addEventListener("load", function () {
+                audio.play();
             }, true);
             audio.src = source;
         }
@@ -63,8 +63,8 @@ function setup() {
             alert("Skriv alderen din")
         }
     }
-    
-    
+
+
 
     let question1B = document.getElementById("question-1-answers-B");
     question1B.addEventListener("click", goAway);
