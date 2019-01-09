@@ -24,7 +24,7 @@ function setup() {
         function isDown(key) { return downKeys.has(key) }
         const s = bil.style;
 
-        let angle = (moveAngle * Math.PI / 180);
+        
 
 
         if (isDown("ArrowDown")) { ((s.transform = "rotate(180deg)")) && (s.top = (y += speed) + "px"); }
@@ -32,8 +32,11 @@ function setup() {
         if (isDown("ArrowRight")) { (s.transform = "rotate(90deg)") && (s.left = (x += speed) + "px"); }
         if (isDown("ArrowLeft")) { (s.left = (x -= speed) + "px") && (s.transform = "rotate(270deg)"); }
 
-        if ((isDown("ArrowUp") && (isDown("ArrowRight")))) { ((s.transform = "rotate(45deg)")) && (s.top = (y -= speed) + "px"); }
-       
+        if ((isDown("ArrowUp") && (isDown("ArrowRight")))) { ((s.transform = "rotate(45deg)")); }
+        if ((isDown("ArrowUp") && (isDown("Arrowleft")))) { ((s.transform = "rotate(315deg)")); }
+        if ((isDown("ArrowDown") && (isDown("ArrowRight")))) { ((s.transform = "rotate(135deg)")); }
+        if ((isDown("ArrowDown") && (isDown("ArrowLeft")))) { ((s.transform = "rotate(225deg)")); }
+
         window.requestAnimationFrame(update);
     }
 
