@@ -1,11 +1,14 @@
 #bane{
-    border: solid greenyellow 5px;
-    width: 800px;
-    height: 600px;
-    position: absolute;
-    background-image: url("track.png");
-    background-size: cover;
+    width: 1280px;
+    height: 669px;
+    position: relative;
+    background-image: url("bilbane.svg");
+    background-size: contain;
     background-repeat: no-repeat;
+}
+
+body {
+    margin: 0;
 }
 
 #bil {
@@ -18,13 +21,35 @@
     border: solid rgb(251, 255, 8) 2px;
     background-color: rgb(72, 43, 92);
 }
+
+#stripe {
+    position: absolute;
+    width: 5px;
+    height: 48px;
+    left: 7px;
+    border: solid pink 1px;
+    background-color: white;
+}
 #vindu {
         position: absolute;
        
         width: 16px;
         height: 10px;
         border-radius: 5px;
-        border: solid fuchsia 2px;
+        border: solid rgb(221, 132, 221) 2px;
         background-color: aqua;
     
+}
+
+#bil2 {
+    position: relative;
+    left: 50px;
+    top: 200px;
+    width: 20px;
+    height: 50px;
+    border-radius: 5px;
+    border: solid rgb(0, 255, 42) 2px;
+    background-color: rgb(236, 75, 196);
+}
+
 }

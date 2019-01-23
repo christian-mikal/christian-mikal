@@ -1,0 +1,7 @@
+body {
+    margin: 0;
+}
+
+canvas {
+    background: conic-gradient(#fff, #000,white, black, white);
+}
