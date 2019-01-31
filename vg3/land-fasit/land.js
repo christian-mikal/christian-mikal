@@ -1,4 +1,4 @@
-//@ts-check
+// @ts-check
 class Land {
     constructor(navn, befolkning, hovedstad, bnp, areal, hbef) {
         this.navn = navn;
@@ -18,62 +18,31 @@ const landListe = [
     new Land("Island", 0.3, "Reykjavik", 2, 300, 0.6),
 ];
 
-class Circle {
-    constructor(x, y, radius, color) {
-        this.x = x;
-        this.y = y;
-        this.radius = radius;
-        this.color = color;
-    }
-}
-
 function setup() {
-
-    const canvas = document.querySelector('canvas');
-    const c = canvas.getContext('2d');
-
-    function randomIntFromRange(min, max) {
-        return Math.floor(Math.random() * (max - min + 1) + min);
-    }
-    addEventListener('resize', () => {
-        canvas.width = innerWidth;
-        canvas.height = innerHeight / 2;
-        init()
-    })
-
-
-    let inpNavn = document.getElementById("navn");
-    let inpBefolkning = document.getElementById("befolkning");
-    let inpHovedstad = document.getElementById("hovedstad");
-    let inpBnp = document.getElementById("bnp");
-    let inpAreal = document.getElementById("areal");
-    let inpHbef = document.getElementById("hbef");
-    
     let btnTegn = document.getElementById("tegn");
     let selL1 = document.getElementById("land1");
     let selL2 = document.getElementById("land2");
     let selL3 = document.getElementById("land3");
     let selL4 = document.getElementById("land4");
+    let divMain = document.getElementById("main");
     let divGrafikk = document.getElementById("grafikk");
     let divOversikt = document.getElementById("oversikt");
-
     let btnLagre = document.getElementById("lagre");
+    let inpNavn = document.getElementById("navn");
+    let inpBefolkning = document.getElementById("befolkning");
+    // ... flere linjer
     btnLagre.addEventListener("click", lagreData);
+    btnTegn.addEventListener("click", visGrafisk);
     visListe();
 
     function lagreData() {
         let navn = inpNavn.value;
         let befolkning = inpBefolkning.value;
-        let hovedstad = inpHovedstad.value;
-        let bnp = inpBnp.value;
-        let areal = inpAreal.value;
-        let hbef = inpHbef.value;
-
-        let land = new Land(navn, befolkning, hovedstad, bnp, areal, hbef);
+        //  .. flere linjer
+        let land = new Land(navn, befolkning);
         landListe.push(land);
-        console.log(landListe);
+        visListe();
     }
-
 
     function visGrafisk() {
         let l1 = selL1.value;
@@ -92,14 +61,34 @@ function setup() {
             let land = finnLand(e);
             if (land.befolkning > max) max = land.befolkning;
         })
-        let sortertListe = Array.from(liste).map(e => finnLand(e)).sort((a, b) => b.befolkning - a.befolkning);
+        let sortertListe = Array.from(liste).map(e => finnLand(e)).sort((a,b) => b.befolkning - a.befolkning);
         console.log(sortertListe);
         sortertListe.forEach(e => {
-            lagRunning(e, max);
+            lagRunning(e,max);
         })
 
     }
 
+    /**
+     * Lager en runding som tilsvarer bef. i et valgt land
+     * @param {Land} land   Navn på et land som skal finnes i landListe
+     * @param {number} max  maksimum bef for valgte land
+     */
+    function lagRunning(land,max) {
+        let radius = Math.sqrt(200*200*(+land.befolkning/max));
+        let sirkel = document.createElement("div");
+        sirkel.className = "sirkel";
+        divGrafikk.appendChild(sirkel);
+        sirkel.style.width = sirkel.style.height = radius + "px";
+        
+
+    }
+
+     /**
+      * Gitt navnet på et land - finner data om landet
+      * @param {string} navn navn på land du søker
+      * @returns {Land} gir tilbake en instans av klassen Land
+      */
     function finnLand(navn) {
         for (let i = 0; i < landListe.length; i++) {
             let land = landListe[i];
@@ -119,51 +108,3 @@ function setup() {
         selL1.innerHTML = selL2.innerHTML = selL3.innerHTML = selL4.innerHTML = s;
     }
 }
-
-
-/*
-
-
-
-canvas.width = innerWidth;
-canvas.height = innerHeight / 2;
-
-
-let circle1;
-
-
-
-function init() {
-    circle1 = [];
-
-    let radius = befolkning;
-    let x = randomIntFromRange(radius, canvas.width - radius);
-    let y = randomIntFromRange(radius, canvas.height - radius);
-
-
-    circle1.push(new Circle(x, y, radius, "black"));
-}
-
-this.draw = function () {
-    c.beginPath()
-    c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
-    c.fillStyle = this.color
-    c.fill()
-    c.closePath()
-}
-
-this.update = function () {
-    this.draw();
-}
-
-function animate() {
-    requestAnimationFrame(animate)
-    c.clearRect(0, 0, canvas.width, canvas.height)
-
-    circle1.update();
-
-
-
-}
-init();
-animate();
