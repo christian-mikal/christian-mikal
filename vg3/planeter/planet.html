@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="planet.css">
+    <link rel="stylesheet" href="solsystem.css">
+    <script src="planet.js"></script>
+    <title>Planeter</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="planeter">
+            <form id="registrerPlanet">
+                <label for="navn">Navn<input type="text" id="navn"></label>
+                <label for="baneradius">Baneradius<input type="number" id="baneradius"></label>
+                <label for="periode">Periode<input type="number" id="periode"></label>
+                <label for="diameter">Diameter<input type="number" id="diameter"></label>
+                <label for="banefart">Banefart <input type="number" id="banefart"></label>
+                <label for="masse">Masse<input type="number" id="masse"></label>
+                <label for="farge">Farge<input type="text" id="farge"></label>
+                <label for="lagre"> <button id="lagre" type="button">Lagre</button></label>
+            </form>
+        </div>
+        <p> <ul>baneradius er i milloner km, andre tall i km eller km/s. Periode er antall år på en runde rundt sola. Massen er gitt i ⋅10^24 kg </ul></p>
+
+    </div>
+
+    <div id="oversikt">
+        <select name="planet1" id="planet1"></select>
+        <select name="planet2" id="planet2"></select>
+        <select name="planet3" id="planet3"></select>
+        <select name="planet4" id="planet4"></select>
+        <button id="tegn">Vis planeter</button>
+    </div>
+
+    <div id="grafikk">
+    </div>
+
+
+
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>

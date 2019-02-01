@@ -1,0 +1,83 @@
+form {
+    width: 30em;
+    max-width: 85%;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: rgb(101, 111, 194);
+    border: solid gray 2px;
+    position: relative;
+}
+
+form>label {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(147, 221, 203);
+    border: solid rgb(0, 0, 0) 1px;
+}
+
+form:after {
+    color: blue;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+}
+
+#lagre {
+    background-color: rgb(54, 39, 37);
+    color: white;
+    border-radius: 5px;
+}
+
+canvas {
+    margin: 10px;
+    border: solid gray 1px;
+}
+
+body {
+    margin: 0;
+}
+
+#grafikk {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 500px;
+    border: 1px solid gray;
+    background-color: lightblue;
+}
+
+div.sirkel {
+    width: 50px;
+    height: 50px;
+    border: solid aliceblue 1px;
+    border-radius: 50%;
+    position: relative;
+    float: left;
+    text-align: center;
+    top: 50%;
+    left: 40%;
+    line-height: 25px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+   /* animation: myOrbit 5s linear infinite;  */
+}                            
+
+
+/*
+ * Set up the keyframes to actually describe the begining and end states of 
+ * the animation.  The browser will interpolate all the frames between these 
+ * points.  Again, remember your vendor-specific prefixes for now!
+ */
+
+@keyframes myOrbit {
+    from {
+        transform: rotate(0deg) translateX(150px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(150px) rotate(-360deg);
+    }
+}

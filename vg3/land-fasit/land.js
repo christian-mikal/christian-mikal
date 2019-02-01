@@ -61,12 +61,11 @@ function setup() {
             let land = finnLand(e);
             if (land.befolkning > max) max = land.befolkning;
         })
-        let sortertListe = Array.from(liste).map(e => finnLand(e)).sort((a,b) => b.befolkning - a.befolkning);
+        let sortertListe = Array.from(liste).map(e => finnLand(e)).sort((a, b) => b.befolkning - a.befolkning);
         console.log(sortertListe);
         sortertListe.forEach(e => {
-            lagRunning(e,max);
+            lagRunning(e, max);
         })
-
     }
 
     /**
@@ -74,21 +73,20 @@ function setup() {
      * @param {Land} land   Navn på et land som skal finnes i landListe
      * @param {number} max  maksimum bef for valgte land
      */
-    function lagRunning(land,max) {
-        let radius = Math.sqrt(200*200*(+land.befolkning/max));
+    function lagRunning(land, max) {
+        let radius = Math.sqrt(200 * 200 * (+land.befolkning / max));
         let sirkel = document.createElement("div");
         sirkel.className = "sirkel";
         divGrafikk.appendChild(sirkel);
         sirkel.style.width = sirkel.style.height = radius + "px";
-        
 
     }
 
-     /**
-      * Gitt navnet på et land - finner data om landet
-      * @param {string} navn navn på land du søker
-      * @returns {Land} gir tilbake en instans av klassen Land
-      */
+    /**
+     * Gitt navnet på et land - finner data om landet
+     * @param {string} navn navn på land du søker
+     * @returns {Land} gir tilbake en instans av klassen Land
+     */
     function finnLand(navn) {
         for (let i = 0; i < landListe.length; i++) {
             let land = landListe[i];
