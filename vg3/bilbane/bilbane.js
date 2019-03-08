@@ -22,22 +22,14 @@ function setup1() {
         if (isDown("ArrowRight")) { (s.transform = "rotate(90deg)") && (s.left = (x += speed) + "px"); }
         if (isDown("ArrowLeft")) { (s.left = (x -= speed) + "px") && (s.transform = "rotate(270deg)"); }
 
-        if ((isDown("ArrowUp") && (isDown("ArrowRight")))) { ((s.transform = "rotate(90deg)") && (x -= speed) + "px"); }
-        if ((isDown("ArrowUp") && (isDown("ArrowLeft")))) { ((s.transform = "rotate(315deg)")&& (x += speed) + "px"); }
+        if ((isDown("ArrowUp") && (isDown("ArrowRight")))) { ((s.transform = "rotate(45deg)")); }
+        if ((isDown("ArrowUp") && (isDown("ArrowLeft")))) { ((s.transform = "rotate(315deg)")); }
         if ((isDown("ArrowDown") && (isDown("ArrowRight")))) { ((s.transform = "rotate(135deg)")); }
         if ((isDown("ArrowDown") && (isDown("ArrowLeft")))) { ((s.transform = "rotate(225deg)")); }
-
-
-        
-        
-        
-        
+     
         window.requestAnimationFrame(update);
     }
-
     window.requestAnimationFrame(update);
-
-
 }
 
 function setup2() {

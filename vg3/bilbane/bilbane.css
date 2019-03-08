@@ -12,9 +12,7 @@ body {
 }
 
 #bil {
-    position: relative;
-    left: 50px;
-    top: 200px;
+    position: absolute;
     width: 20px;
     height: 50px;
     border-radius: 5px;
@@ -52,4 +50,3 @@ body {
     background-color: rgb(236, 75, 196);
 }
 
-}

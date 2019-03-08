@@ -1,4 +1,6 @@
 // @ts-check
+
+
 class DigitalTime extends HTMLElement {
     constructor() {
       super();

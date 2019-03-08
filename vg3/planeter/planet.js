@@ -100,8 +100,7 @@ function setup() {
         sirkel.style.width = sirkel.style.height = radius + "px";
         sirkel.style.backgroundColor = farge;
         sirkel.innerHTML = `${planet.navn}<br> Masse:${planet.masse}<br> Solavstand: ${planet.baneradius} <br> Diameter: ${planet.diameter} `;
-        sirkel.style.animation = `myOrbit ${periode*5}s linear infinite`
-
+        sirkel.style.animation = `myOrbit ${periode*5}s linear infinite`;
     }
 
     /**
