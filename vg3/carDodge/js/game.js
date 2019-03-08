@@ -4,7 +4,9 @@ function setup() {
 
     let started = true;
     let poeng = 0;
+    
 
+    let melding = document.getElementById("melding");
 
     let startside = document.getElementById("start");
     let canvasdisplay = document.getElementById("canvas");
@@ -169,8 +171,13 @@ function setup() {
                 if (distance(mouse.x, mouse.y, _this.x, _this.y) < 50 && _this.opacity < 0.4) {
                     _this.opacity += 0.02; 
                     started = false;
-                   
+                   startKnapp = document.getElementById("startknapp");
+    startKnapp.addEventListener("click", startSpill);
                     canvas.style.cursor = "auto";
+                    melding.style.display = "block";
+                    melding.innerHTML = `Poeng: ${Math.floor(poeng/10)} <br>
+                    `
+                   
 
                 } else if (_this.opacity > 0) {
                     _this.opacity -= 0.02;
@@ -237,7 +244,7 @@ function setup() {
             }
             c.clearRect(0, 0, canvas.width, canvas.height);
             poeng++;
-            header.setAttribute("username", `Poeng:${Math.floor(poeng / 10)}`);
+            header.setAttribute("username", `Poeng:${Math.floor(poeng/10)}`);
 
             particles.forEach(function (particle) {
                 particle.update(particles);

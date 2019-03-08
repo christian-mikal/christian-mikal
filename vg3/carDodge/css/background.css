@@ -7,7 +7,7 @@ body {
 canvas {
     background: linear-gradient(160deg, #6dbeda, #a894de, #e762d3);
     background-size: 600% 600%;
-    animation: animasjon 100s ease infinite;
+    animation: animasjon 30s ease infinite;
     cursor: none;
 
 }
@@ -26,9 +26,12 @@ canvas {
     }
 }
 
-
-#kant {
-    margin: auto;
+#melding {
+    display: none;
+}
+.kant {
+    position: absolute;
+    margin-left: 23%;
     width: 50%;
     border: 3px solid green;
     padding: 10px;
@@ -59,7 +62,7 @@ canvas {
 }
 
 #start {
-    background-image: url("balls.jpeg");
+    background-image: url("../bilder/balls.jpeg");
     background-repeat: no-repeat;
     position: absolute;
     background-size: cover;
