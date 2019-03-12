@@ -39,6 +39,16 @@ canvas {
     text-align: center;
     margin-top: 100px;
 }
+.kant_melding {
+    position: absolute;
+    margin-left: 24%;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    background: rgba(133,215,153, 0.8);
+    text-align: center;
+    margin-top: 170px;
+}
 
 .start-btn {
     text-align: center;

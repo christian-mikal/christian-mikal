@@ -4,7 +4,7 @@ function setup() {
 
     let started = true;
     let poeng = 0;
-    
+
 
     let melding = document.getElementById("melding");
 
@@ -13,16 +13,20 @@ function setup() {
     canvasdisplay.style.display = "none";
 
     let header = document.getElementById("header");
-   
+
 
     let startKnapp = document.getElementById("startknapp");
     startKnapp.addEventListener("click", startSpill);
 
 
     function startSpill() {
+
         canvasdisplay = document.getElementById("canvas");
         canvasdisplay.style.display = "block";
         startside.style.display = "none";
+        melding.style.display = "none";
+        poeng = 0;
+        started = true;
 
         var canvas = document.querySelector('canvas'); //@ts-check 
 
@@ -38,7 +42,15 @@ function setup() {
             y: innerHeight / 2
         };
 
-        var colors = ['#FF0000'];
+        var colors = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6', 
+        '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',
+        '#80B300', '#809900', '#E6B3B3', '#6680B3', '#66991A', 
+        '#FF99E6', '#CCFF1A', '#FF1A66', '#E6331A', '#33FFCC',
+        '#66994D', '#B366CC', '#4D8000', '#B33300', '#CC80CC', 
+        '#66664D', '#991AFF', '#E666FF', '#4DB3FF', '#1AB399',
+        '#E666B3', '#33991A', '#CC9999', '#B3B31A', '#00E680', 
+        '#4D8066', '#809980', '#E6FF80', '#1AFF33', '#999933',
+        '#FF3380', '#CCCC00', '#66E64D'];
 
         // utility functions
 
@@ -169,15 +181,18 @@ function setup() {
                 // mouse colliton- detection
 
                 if (distance(mouse.x, mouse.y, _this.x, _this.y) < 50 && _this.opacity < 0.4) {
-                    _this.opacity += 0.02; 
+
+                    _this.opacity += 0.02;
                     started = false;
-                   startKnapp = document.getElementById("startknapp");
-    startKnapp.addEventListener("click", startSpill);
-                    canvas.style.cursor = "auto";
+                    //canvas.style.cursor = "auto";
                     melding.style.display = "block";
-                    melding.innerHTML = `Poeng: ${Math.floor(poeng/10)} <br>
+                    melding.innerHTML = `
+                    <h1>GAME OVER </h1> <p> Poeng: ${Math.floor(poeng / 10)} </p> <br>
+
+                    <span id="startknapp1"  class='start-btn'>Start</span>
                     `
-                   
+                    let startKnapp1 = document.getElementById("startknapp1");
+                    startKnapp1.addEventListener("click", startSpill);
 
                 } else if (_this.opacity > 0) {
                     _this.opacity -= 0.02;
@@ -185,7 +200,6 @@ function setup() {
                 }
                 if (distance(mouse.x, mouse.y, _this.x, _this.y) < 150 && _this.opacity < 0.4) {
                     _this.opacity += 0.02;
-
                 }
 
                 _this.x += _this.velocity.x;
@@ -195,12 +209,12 @@ function setup() {
             this.draw = function () {
                 c.beginPath();
                 c.arc(_this.x, _this.y, _this.radius, 0, Math.PI * 2, false);
-                c.save();
-                c.globalAlpha = _this.opacity;
+               // c.save();
+               // c.globalAlpha = _this.opacity;
                 c.fill();
                 c.fillStyle = _this.color;
                 c.restore();
-                c.strokeStyle = _this.color;
+                //c.strokeStyle = _this.color;
                 c.stroke();
                 c.closePath();
             };
@@ -212,22 +226,21 @@ function setup() {
 
         function init() {
 
-            circle1 = new Partikkel(undefined, undefined, 10, "green");
+            circle1 = new Partikkel(mouse.x, mouse.y, 10, "green");
 
             particles = [];
 
-            for (var i = 0; i < 20; i++) {
+            for (var i = 0; i < 30; i++) {
                 var x = randomIntFromRange(radius, canvas.width - radius);
                 var y = randomIntFromRange(radius, canvas.height - radius);
                 var radius = 40;
                 var color = randomColor(colors);
 
-                if (i !== 0) {
+                if (i !== 0 ) {
                     for (var j = 0; j < particles.length; j++) {
-                        if (distance(x, y, particles[j].x, particles[j].y) - radius * 2 < 0) {
+                        if (distance(x, y, particles[j].x, particles[j].y) - radius * 2 < 0 || distance(x, y, circle1.x, circle1.y) - 60 * 2 < 0) {
                             x = randomIntFromRange(radius, canvas.width - radius);
                             y = randomIntFromRange(radius, canvas.height - radius);
-
                             j = -1;
                         }
                     }
@@ -244,15 +257,20 @@ function setup() {
             }
             c.clearRect(0, 0, canvas.width, canvas.height);
             poeng++;
-            header.setAttribute("username", `Poeng:${Math.floor(poeng/10)}`);
+            header.setAttribute("username", `Poeng:${Math.floor(poeng / 10)}`);
 
             particles.forEach(function (particle) {
                 particle.update(particles);
             });
 
+
+
+
             circle1.x = mouse.x;
             circle1.y = mouse.y;
             circle1.update();
+
+
         }
 
         init();
@@ -273,7 +291,6 @@ function setup() {
     function distance(x1, y1, x2, y2) {
         var xDist = x2 - x1;
         var yDist = y2 - y1;
-
         return Math.sqrt(Math.pow(xDist, 2) + Math.pow(yDist, 2));
     }
 
