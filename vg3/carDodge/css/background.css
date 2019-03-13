@@ -11,6 +11,23 @@ canvas {
     cursor: none;
 
 }
+.slider:hover {
+    opacity: 1;
+  }
+  
+
+.slider {
+    -webkit-appearance: none;
+    width: 70%;
+    height: 15px;
+    border-radius: 5px;   
+    background: rgb(186, 255, 83);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
 #canvas {
     display: none;
 }
@@ -37,7 +54,7 @@ canvas {
     padding: 10px;
     background: rgba(133,215,153, 0.8);
     text-align: center;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 .kant_melding {
     position: absolute;
