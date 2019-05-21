@@ -1,0 +1,28 @@
+
+form {
+    width: 30em;
+    max-width: 85%;
+    padding: 5px; 
+    border-radius: 20px;
+    background-color: greenyellow;
+    border:solid gray 1px;
+    position: relative;
+}
+
+
+
+form > label  {
+    display: grid; 
+    grid-template-columns: 2fr 1fr;
+    margin: 5px; 
+    padding: 5px; 
+    border-radius: 5px;
+    background-color: greenyellow;
+    border:solid gray 1px;
+}
+
+
+
+#lagre {
+    background-color: gray;
+}

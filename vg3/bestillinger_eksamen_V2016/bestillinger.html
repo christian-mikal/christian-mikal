@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bestillinger.css">
+    <script src="bestillinger.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Bestill en reise</h1>
+    <div id="velgBy">
+        <h2>Velg by</h2>
+        <select id="by" name="by">
+            <option value="">...</option>
+            <option value="roma">Roma</option>
+            <option value="newyork">New York</option>
+            <option value="stpetersburg">St. Petersburg</option>
+            <option value="amsterdam">Amsterdam</option>
+        </select>
+    </div>
+    <br>
+    <div id="registrer">
+        <form onchange=visPris() id="skjema">
+            <br>
+            velg periode
+            <select id="periode">
+                <option value="sommer">sommer</option>
+                <option value="vinter">vinter</option>
+            </select>
+            <br>
+            Antall Dobbeltrom
+            <select id="dobbelt">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <br>
+            Antall enkeltrom
+            <select id="engelt">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <br>
+            Hotell
+            <select id="hotell">
+                <option value="trivago">Trivago</option>
+                <option value="SAS">SAS</option>
+            </select>
+            <br>
+            Vil du ha kulturpass? (ja)
+            <input id="kulturpass" type="checkbox">
+            <br>
+            <label for="lagre"> <button type="button" id="lagre">Lagre</button></label>
+        </form>
+        <div>
+            Prisen på dine valg er <span id="pris">0</span>
+        </div>
+    </div>
+
+    <div id="oversikt">
+
+    </div>
+
+    <script>
+        setup();
+    </script>
+
+</body>
+
+</html>

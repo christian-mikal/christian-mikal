@@ -233,7 +233,7 @@ function setup() {
                             poengTavle.style.display = "block";
                             //@ts-ignore
                             fornavn = inpFornavn.value;
-                            
+
                             poengTavle.innerHTML += `
                             <ol> ${fornavn}: ${Math.floor(poeng / 10)}  </ol>
                             `
