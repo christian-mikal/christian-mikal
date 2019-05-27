@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/oppgave2.css">
+    <script src="../js/oppgave2.js"></script>
+    <title>Oppgave 2</title>
+</head>
+
+<body>
+    <!--
+          Lag en app hvor bruker kan sjekke inn.
+
+	Bruker skal skrive inn registreringskode - en kode på 8 tegn (2 bokstaver + 6 siffer).
+	Dersom koden ser gyldig ut (som beskrevet over) da skal kunde kunne registrere:
+		egen vekt (Min vekt er ____) og vekt på bagasje (Min bagasje veier ____).
+	Dersom samlet vekt er over 200kg skal meldingen "Overvekt - du må betale xx kr ekstra".
+	Prisen (xx) beregnes som (vekt - 200) * 300
+            -->
+
+    <h1>Registrer</h1>
+    <div id="start">
+            <form>
+                    <label for="kode">Skriv inn registreringskode<input maxlength="8" type="text" id="kode"></label>
+                    <label for="lagreKode"><button type="button" id="lagreKode">Lagre</button></label>
+                </form>
+    </div>
+    <div id="registrer">
+        <form id="reg">
+            <label for="personvekt">Min vekt er<input type="number" id="personvekt" maxlength="3"></label>
+            <label for="bagvekt">Min bagasje veier<input type="number" id="bagvekt" maxlength="4"></label>
+            <label for="lagrevekt"><button type="button" id="lagrevekt">Lagre</button></label>
+        </form>
+        <div id="oversikt">
+
+        </div>
+    </div>
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>

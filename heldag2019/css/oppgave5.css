@@ -1,0 +1,9 @@
+#wierframe {
+    background-image: url("../media/wierframe.png");
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}

@@ -1,0 +1,36 @@
+Oversikt over flyplasser 
+
+Haugsund HAU
+Bergen BGO
+Stavanger SVG
+Oslo OSL
+Trondheim TRD
+Vardø VAW
+Tromsø TOS
+Moss RYG
+Florø FRO
+Bodø BOO
+
+Ruteplan/prisliste
+
+xxx   HAU   BGO 	SVG  	OSL  	TRD 	VAW  	TOS  	RYG 	FRO 	BOO
+HAU			700		600		1200	
+BGO   700			900		1000	1200							600
+SVG   650	890				900		
+OSL	  1190	1300	990				700						400
+TRD	  		1300			800						1200			800	
+VAW	  												1600					1400
+TOS   								1300	1600							900
+RYG   						300				
+FRO 		800						700
+BOO  										1600	1000
+
+I lista vises prisen for en enkeltbilett på strekningen.
+Du flyr fra flyplass i kolonne 1 til flypass i rad 1.
+Eks. tur fra HAU til OSL
+   Velger i kolonne 1 HAU
+   xxx   HAU   	BGO 	SVG  	OSL
+   HAU			700		600		1200*
+   Prisen fra HAU til OSL er 1200
+   
+Det er ikke nødvendigvis samme pris andre veien (OSL HAU koster 1190)

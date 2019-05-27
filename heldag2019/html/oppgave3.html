@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/oppgave3.css">
+    <script src="../js/oppgave3.js"></script>
+    <title>Oppgave 3</title>
+</head>
+
+<body>
+    <!--Lag en app hvor bruker kan velge flyrute
+
+	Bruker velger først hvilken flyplass han/hun vil starte fra og deretter destinasjon.
+	Det er ikke direkteflyging mellom alle flyplasser, så alternativer for destinasjon 
+	(stopp for reisen) må tilpasses avhengig av valgt start.
+
+	Bruker skal kunne velge start,stopp og antall passasjerer (1-5).
+	pris for reisen skal beregnes og vises i skjema.
+
+	MERK/HINT:
+	Du kan løse oppgaven med å vise destinasjon uten å tenke på pris.
+		(lag en liste med destinasjoner for hver startplass)
+	Du kan beregne prisen ut fra tabellen i Flyplasser.txt
+
+
+    Oversikt over flyplasser 
+
+Haugsund HAU
+Bergen BGO
+Stavanger SVG
+Oslo OSL
+Trondheim TRD
+Vardø VAW
+Tromsø TOS
+Moss RYG
+Florø FRO
+Bodø BOO
+            -->
+
+    <h1>Velg flyrute</h1>
+
+     <div id="main">
+        <div>
+            <form onchange=endringer() id="skjema">
+
+                <label>
+                    Velg start Flyplass
+                    <select name="flyplass1" id="flyplass1">
+                        <option value="100">..velg..</option>
+                        <option value="0">HAU</option>
+                        <option value="1">BGO</option>
+                        <option value="2">SVG</option>
+                        <option value="3">OSL</option>
+                        <option value="4">TRD</option>
+                        <option value="5">VAW</option>
+                        <option value="6">TOS</option>
+                        <option value="7">RYG</option>
+                        <option value="8">FRO</option>
+                        <option value="9">BOO</option>
+                    </select>
+                </label>
+
+
+                <label>
+                    Velg hvor du vil lande
+                    <select name="flyplass2" id="flyplass2">
+
+                    </select>
+                </label>
+
+                <label> Hvor mange passasjerer?<select id="passasjer">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select></label>
+            </form>
+            <div id="resultat">
+
+            </div>
+        </div>
+        <div id="bilde">
+
+        </div>
+
+        </div>
+        <script>
+            setup();
+        </script>
+</body>
+
+</html>

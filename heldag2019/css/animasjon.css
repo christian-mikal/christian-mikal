@@ -1,0 +1,55 @@
+#bakgrunn {
+    background-image: url("../media/flyplass.png");
+    width: 800px;
+    height: 600px;
+    top: 50px;
+    left: 0;
+    background-repeat: no-repeat;
+    animation: bakgrunn 10s linear forwards;
+    position: relative;
+    background-size: cover;
+    display: none;
+}
+
+@keyframes bakgrunn {
+    0%    { background-position-x:0px; top: 50px; }
+    50%  {background-position-x:-100px; top: 50px;}
+    75%  {background-position-x:-200px; top: 50px;}
+    100% { background-position-x:-300px; top: 50px; }
+  }
+
+
+
+#start {
+    position: absolute;
+}
+
+#fly {
+    background-image: url("../media/fly.png");
+    width: 100px;
+    height: 80px;
+    background-color: transparent currentColor;
+    
+    top: 50px;
+    left: -500px;
+    display: none;
+    background-repeat: no-repeat;
+    animation: fly 9s linear forwards;
+    position: absolute;
+    background-size: contain;
+    
+}
+
+@keyframes fly {
+    0%    { left: -50px; top: 0px; }
+    10%    { left: 0px; top: 0px; }
+    20%    { left: 20px; top: 0px; }
+    30%    { left: 30px; top: 0px; }
+    40%    { left: 40px; top: 0px; }
+    50%  {left: 60px;  top: 50px; rotate: 20deg;}
+    60% { left: 120px; top: 100px; transform: rotate(20deg);}
+    70%  {left: 170px;  top: 150px;}
+    80% {left:230px; top: 200px;}
+    90% { left: 280px;  top: 250px; }
+    100% { left: 280px;  top: 250px; }
+}

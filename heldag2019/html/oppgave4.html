@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/oppgave4.css">
+    <script src="../js/oppgave4.js"></script>
+    <title>Oppgave 4</title>
+</head>
+<body>
+    <!--
+        4. Utvid/endre appen 
+
+  a) Du skal kunne bestille reiser fra vilkårlig startpunkt til et vilkårlig endepunkt.
+	 Dersom det ikke er direkterute - da må appen legge inn mellomlandinger.
+	 DET VIL SI:
+		Nå skal destinasjon vise alle andre flyplasser en den som er valgt som start
+		(du kan ikke fly fra HAU til HAU).
+		Dersom du velger HAU og VAW, da må du finne en rute for denne reisen.
+		f.eks HAU - OSL - TRD - TOS - VAW
+		Denne ruten skal da vises sammen med pris.
+
+		NB! lag løsning uten pris dersom du ikke får til prisberegning - delvis løsning
+		har også verdi. 
+
+  b) Beskriv hvordan (trenger ikke implementere) du kan finne den billigste ruten mellom to 
+	 valgte flyplasser. Denne kan du prøve på selv om du ikke har løst a).
+
+    -->
+    <h1>Velg flyrute</h1>
+  
+
+    <div id="main">
+       <div>
+           <form onchange=endringer() id="skjema">
+
+               <label>
+                   Velg start Flyplass
+                   <select name="flyplass1" id="flyplass1">
+                       <option value="100">..velg..</option>
+                       <option value="0">HAU</option>
+                       <option value="1">BGO</option>
+                       <option value="2">SVG</option>
+                       <option value="3">OSL</option>
+                       <option value="4">TRD</option>
+                       <option value="5">VAW</option>
+                       <option value="6">TOS</option>
+                       <option value="7">RYG</option>
+                       <option value="8">FRO</option>
+                       <option value="9">BOO</option>
+                   </select>
+               </label>
+
+
+
+               <label class="hidden" id="mellomlanding1">
+                   Mellomlanding:
+                    <select name="mellomlanding1" id="mellomlanding1">
+ 
+                    </select>
+                </label>
+
+                <label class="hidden" id="mellomlanding2">
+                       Mellomlanding
+                        <select name="mellomlanding2" id="mellomlanding2">
+     
+                        </select>
+                    </label>
+
+               <label>
+                    Velg hvor du vil lande
+                    <select name="flyplass2" id="flyplass2">
+ 
+                    </select>
+                </label>
+ 
+
+               <label> Hvor mange passasjerer?<select id="passasjer">
+                       <option value="1">1</option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                       <option value="4">4</option>
+                       <option value="5">5</option>
+                   </select></label>
+           </form>
+           <div id="resultat">
+
+           </div>
+       </div>
+       <div id="bilde">
+
+       </div>
+       <br><br>
+       <p> Over ser du at jeg ikke får helt til det med mellomlanding, jeg har kommet frem til en løsning der du ser de byene du kan fly til, så må du skrive ned hvilke flyplasser du kan bruke. </p>
+       <p>Dersom du ser byen din under "Velg start Flyplass", kan du fly dit direkte, men hvis du ikke ser den må du sjekke tabellen, og finne hvor du kan fly for å komme til din endelige destinasjon. </p>
+
+
+       <p>4b) For å finne den billigste reisen må du sjekke om det er billigere å reise direkte eller ta en mellomlanding. Du kan lage en masse if-setninger, for å sjekke om det er billigere å reise enkeltvei eller å ha en mellomlanding og to.  </p>
+       </div>
+       <script>
+           setup();
+       </script>
+    
+</body>
+</html>

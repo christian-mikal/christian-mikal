@@ -1,0 +1,48 @@
+form {
+    position: relative;
+    width: 35em;
+    max-width: 85%;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid gray 1px;
+    background-color: gainsboro;
+}
+
+form.godkjent {
+    background-color: aquamarine;
+}
+
+form > label {
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid gray 1px;
+    background-color: whitesmoke;
+}
+
+
+
+#lagre {
+    background-color: antiquewhite;
+}
+
+#registrer {
+    display: none;
+}
+
+#bilde{
+    background-image: url("../media/flyplassskjema.png");
+    position: absolute;
+    left: 600px;
+    top: 50px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 400px;
+}
+
+.hidden {
+    display: none;
+}

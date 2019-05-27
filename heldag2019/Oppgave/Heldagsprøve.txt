@@ -1,0 +1,106 @@
+LEVERING AV OPPGAVENE 
+    Du kan lage løsning i denne mappen (lag mapper for html, js , css).
+    På mac kan du velge "komprimer mappe" i finder.
+	Gi zip-filen navnet ole-olsen.zip (dersom du heter Ole Olsen).
+    Last opp denne filen.
+
+
+
+OPPGAVER
+
+1. Du skal lage en animasjon for Norwegian.
+
+	Animasjonen skal vise et fly som lander - når det lander skal du spille lyden tyres.mp3.
+	Animasjonen skal vare i 10s, flyet skal komme inn fra venstre (utenfor skjermen) og stoppe opp 
+	nær høyre kant. Animasjonen skal ha en bredde på 800px og en høyde på 600px.
+	Bakgrunnsbildet skal scrolles slik at det ser ut som om kameraet panner (beveger seg)
+	fra venstre mot høyre. Fly og bakgrunn skal stoppe på likt, lyden spilles 2s før slutt.
+	Flyet skal stå stille i 1s (før slutt).
+
+	NB NB NB !  chrome lar deg BARE starte lydavspilling DERSOM koden som 
+	kjører sound.play()  er aktivert av en eventListener for klikk på et element.
+	BRUKER må starte lyd/animasjon med klikk på f.eks en startknapp.
+
+
+2. Lag en app hvor bruker kan sjekke inn.
+
+	Bruker skal skrive inn registreringskode - en kode på 8 tegn (2 bokstaver + 6 siffer).
+	Dersom koden ser gyldig ut (som beskrevet over) da skal kunde kunne registrere:
+		egen vekt (Min vekt er ____) og vekt på bagasje (Min bagasje veier ____).
+	Dersom samlet vekt er over 200kg skal meldingen "Overvekt - du må betale xx kr ekstra".
+	Prisen (xx) beregnes som (vekt - 200) * 300
+
+3. Lag en app hvor bruker kan velge flyrute
+
+	Bruker velger først hvilken flyplass han/hun vil starte fra og deretter destinasjon.
+	Det er ikke direkteflyging mellom alle flyplasser, så alternativer for destinasjon 
+	(stopp for reisen) må tilpasses avhengig av valgt start.
+
+	Bruker skal kunne velge start,stopp og antall passasjerer (1-5).
+	pris for reisen skal beregnes og vises i skjema.
+
+	MERK/HINT:
+	Du kan løse oppgaven med å vise destinasjon uten å tenke på pris.
+		(lag en liste med destinasjoner for hver startplass)
+	Du kan beregne prisen ut fra tabellen i Flyplasser.txt
+
+4. Utvid/endre appen 
+
+  a) Du skal kunne bestille reiser fra vilkårlig startpunkt til et vilkårlig endepunkt.
+	 Dersom det ikke er direkterute - da må appen legge inn mellomlandinger.
+	 DET VIL SI:
+		Nå skal destinasjon vise alle andre flyplasser en den som er valgt som start
+		(du kan ikke fly fra HAU til HAU).
+		Dersom du velger HAU og VAW, da må du finne en rute for denne reisen.
+		f.eks HAU - OSL - TRD - TOS - VAW
+		Denne ruten skal da vises sammen med pris.
+
+		NB! lag løsning uten pris dersom du ikke får til prisberegning - delvis løsning
+		har også verdi. 
+
+  b) Beskriv hvordan (trenger ikke implementere) du kan finne den billigste ruten mellom to 
+	 valgte flyplasser. Denne kan du prøve på selv om du ikke har løst a).
+
+5. Dokumentasjon
+
+	Lag dokumentasjon for en av oppgavene 2,3 eller 4.
+	Ta med kravspek, wireframe og testing.
+	Begrunn valg du har tatt for dine løsninger.
+
+
+/******************************************************************/
+
+Vurdering av besvarelser
+========================
+
+1. Animasjonen
+Er kravene oppfylt, er bakgrunnen for flyet transparent, stemmer tidene, spilles lyd
+
+2. Innsjekk
+Sjekkes koden?, brukbart skjemadesign (lett å bruke)
+Leses vekt+vekt riktig, beregnes totalvekt
+if-test for overvekt - beregnes pris, vises pris på skjema
+
+3. Oppdateres destinasjon ved valg av start?
+brukes array eller tilsvarende 
+"programmere med enkle og indekserte variabler eller andre kolleksjoner av variabler"
+brukes for-løkke "programmere med valg og gjentakelser"
+Beregnes pris , vises pris på skjema
+
+4. a) Oppdateres destinasjon (skal ikke vise startsted)?
+Oppdages det at start-stopp ikke er en direkterute?
+Forsøk på å finne mellomstasjoner (forsøk teller)
+Vellykket løsning på mellomstasjoner
+Forsøk på prisberegning
+Fungerende prisberegning
+"klasse, objekt og arv" - brukes klasser?
+
+4 b) Forklaring som er delvis på sporet
+Forklaring som ville virke (med en del arbeid)
+
+5 Oppfyller krav til dok. kravspek - wireframe - testing
+Gode begrunnelser - kommentarer i koden.
+Er valg av array/annet begrunnet?
+
+
+
