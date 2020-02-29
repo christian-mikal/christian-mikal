@@ -1,0 +1,50 @@
+#bilder {
+    display: flex;
+}
+
+.bilde {
+    background-size:contain;
+    background-position: center;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    flex: 1;
+    transition: 3s;
+    border: 1px solid black;
+}
+
+.bilde:hover {
+    filter: sepia(0%);
+    flex: 1.5;
+}
+ 
+div.bilde:nth-child(1) {
+    background-image: url("../bilder/b3.png")
+}
+div.bilde:nth-child(2) {
+    background-image: url("../bilder/b2.png")
+}
+div.bilde:nth-child(3) {
+    background-image: url("../bilder/b1.png")
+}
+div.bilde:nth-child(4) {
+    background-image: url("../bilder/b4.png")
+}
+
+#sjef {
+    display: flex;
+}
+
+.sjef {
+    background-size:contain;
+    background-position: center;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    flex: 1;
+    transition: 1s;
+    border: 1px black solid;
+
+}
+
+div.sjef:nth-child(1) {
+    background-image: url("../bilder/sjef.png")
+}

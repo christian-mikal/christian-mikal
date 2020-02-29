@@ -1,0 +1,31 @@
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 40px;
+    height: 60vh;
+  }
+  .grid > div {
+     padding: 20px 0;
+    font-size: 30px;
+
+  }
+  .item1 {
+    grid-row: 1 / span 4;
+    
+  }
+  .item2 {
+    grid-area: 1 / 2 / 4 / 6;
+    background-size:  cover;
+    background-repeat: no-repeat;
+    background-image: url("../bilder/fotball.jpg");
+  }
+
+  .item3 {
+    grid-area: 4 / 2 /4/6;
+
+  }
+  
+p {
+    font-size: 0.5em;
+}

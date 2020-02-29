@@ -1,0 +1,25 @@
+:root {
+    --slideshow-bg: light-gray;
+}
+
+#slideshow {
+    background:url("Bilder/postvare1.png");
+    position: relative;
+    left: 2em;
+    top:2em;
+    width: calc(100% - 4em);
+    height:calc(100% - 4em);
+    border: 5px solid gray;
+    border-radius: 2em;
+    background-color: var(--slideshow-bg);
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center;
+    animation: slideshow 9s steps(1) infinite;
+}
+
+@keyframes slideshow {
+    0% { background-image: url("Bilder/postvare1.png")}
+    33% { background-image: url("Bilder/postvare2.png")}
+    66% { background-image: url("Bilder/postvare3.png")}
+}

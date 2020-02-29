@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Posten</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="tittel">
+        <h1>posten</h1>
+    </div>
+    <div id="meny">
+        <ul>
+                <li><a href="hjem.html">Hjem</a></li>
+                <li><a href="produkt.html">Produkt</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="om_oss.html">Om oss</a></li>
+        </ul>
+    </div>
+
+    <div class="innhold">
+
+        <form id="skjema">
+
+            <label>Fornavn</label>
+            <input type="text" id="fornavn" name="fornavn" placeholder="Ditt fornavn..">
+           
+            <br><hr><label>Etternavn</label>
+            <input type="text" id="etternavn" name="etternavn" placeholder="Ditt etternavn..">
+
+            <br><hr><label> Alder </label> <input type="text" id="alder" type="number" placeholder="Din alder..">
+
+            <br><hr><label> Adresse </label><input id="adresse" type="text" placeholder="Adressen din..">
+
+            <br><hr><button id="lagre" type="button" >Lagre </button>
+
+        </form>
+
+      
+        <div id="enID">
+            <table>
+                <tr>
+                    <th>Email</th>
+                    <td><img src="Bilder/gmail.png"></td>
+                    <td>posten@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Mobil</th>
+                    <td><img src="Bilder/mobil.png"></td>
+                    <td>+47 23 14 90 00</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="bunn">
+        <table>
+
+            <tr>
+                <th> <a href="hjem.html">©2017 Posten Tysvær  </a> </th>
+                <th> <a href="https://www.thespruce.com/top-ten-tips-for-making-the-best-cookies-479848">Cookies  </a> </th>
+                <th> <a href="https://www.verisure.no/sem/vs/g/sikkerhet?gclid=Cj0KCQjw557NBRC9ARIsAHJvVVNNtB5ZjegoRS_w3tMjv0ajnaY5nJhtq0jE6kE3ezGrASSDhLJ6cbEaAt3rEALw_wcB&gclsrc=aw.ds#1">  Personvern og sikkerhet</a></th>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        let btn = document.getElementById("lagre")
+        btn.addEventListener("click", lagreData);
+
+
+        function lagreData() {
+            let fornavn = document.getElementById("fornavn").value;
+            let etternavn = document.getElementById("etternavn").value;
+            let alder = document.getElementById("alder").value;
+            let adresse = document.getElementById("adresse").value;
+            alert("Hei" + " " + fornavn + " " + etternavn + "." + " " + "Takk for at du er en kunde i Posten. som takk vil vi sende deg" + " " + alder + " " + "pakker i posten. " + " " + "Pakkene vil bli sendt til" + " " + adresse + ".");
+        }
+    </script>
+</body>
+
+</html>

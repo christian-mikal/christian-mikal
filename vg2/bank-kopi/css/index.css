@@ -1,0 +1,97 @@
+header {
+    position: absolute;
+    width: 100vw;
+    background-color: #edd9c0;
+    height: 15vh;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2em;
+    font-family: sans-serif;
+    color: #FFFFFF;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    height: 10vh;
+    width: 100vw;
+}
+
+#artikkel {
+    position: absolute;
+    top: 10vh;
+    height: auto;
+    width: 100vw;
+}
+
+#main {
+    position: absolute;
+    top: 15vh;
+    background-color: #c9d8c5;
+    width: 100vw;
+    height: 70vh;
+}
+
+footer {
+    position: absolute;
+    top: 85vh;
+    width: 100vw;
+    height: 15vh;
+    background-color: #7d4627;
+}
+
+
+
+#footer, table, td, th {
+    text-align: center; 
+   color: #eedac0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 60px;
+}
+
+
+.flex-menu {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-menu>div a {
+    background-color: #a8b6bf;
+    width: 25vw;
+    text-align: center;
+    line-height: 68px;
+    font-size: 30px;
+}
+
+.money {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    animation: money 20s ease-in-out infinite;
+    background-image: url("../bilder/money.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@keyframes money {
+    0% {
+        left: -100px;
+        top: 55px;
+    }
+    100% {
+        left: 100vw;
+        top: 55px;
+    }
+}
+

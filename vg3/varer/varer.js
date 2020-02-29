@@ -15,15 +15,23 @@ class Bestillinger {
     }
 }
 
+/**
+ * 
+ * @param {string} id 
+ */
+function $(id) {
+    return document.getElementById(id);
+}
+
 
 function setup() {
 
     let bestilling = [];
 
-    let selVarer = document.getElementById("varer");
-    let inpAntall = document.getElementById("antall");
-    let btnBestill = document.getElementById("bestill");
-    let divMelding = document.getElementById("melding");
+    let selVarer = $("varer");
+    let inpAntall = $("antall");
+    let btnBestill = $("bestill");
+    let divMelding = $("melding");
 
 
     btnBestill.addEventListener("click", visBestilling);
@@ -31,7 +39,7 @@ function setup() {
 
 
     function visVarer() {
-        document.getElementById(this.value + "div").classList.remove(this.value + "ting");
+        document.getElementById(this.value + "div").classList.remove(this.value + "vare");
         return;
     }
 
@@ -44,7 +52,7 @@ function setup() {
         bestilling[0] = b;
 
         if (antall < 1 || antall > 100) {
-            alert("JAU");
+            alert("Venligst ikke bestill mer enn 100 varer");
             location.reload();
         }
 

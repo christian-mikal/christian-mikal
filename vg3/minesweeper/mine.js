@@ -25,6 +25,8 @@ function lagBrett(width,height) {
 
 }
 
+
+
 // Viser bruk av funksjoner med parameter
 // Bruker $ som i jquery og andre bibloteker
 /**

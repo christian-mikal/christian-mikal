@@ -170,10 +170,10 @@ function setup() {
             this.x = x;
             this.y = y;
             this.velocity = {
-                x: (Math.random() - 0.5) * 5,
-                y: (Math.random() - 0.5) * 5
+                x: 1,
+                y: 1
             };
-            this.mass = Math.random();
+            this.mass =1;
             this.opacity = 0;
             this.radius = radius;
             this.color = color;

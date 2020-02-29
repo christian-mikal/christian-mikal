@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/bli-kunde.css">
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="../bli-kunde.js"></script>
+    <link rel="icon" href="../bilder/favicon.ico">
+    <title>Bank</title>
+</head>
+
+<body>
+    <header>
+        <h1> Tysvær Sparebank</h1>
+    </header>
+    <article id="main">
+        <div id="menu">
+            <div class="flex-menu">
+
+                <div>
+                    <ul>
+                        <li> <a href="../index.html">Hjem <img src="../bilder/005-presentation.svg" width="20px" height="20px"></a></div>
+                </li>
+                </ul>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">Kunder <img src="../bilder/001-money.svg" width="20px" height="20px"></a>
+                            <ul>
+                                <li> <a href="../html/kunder.html">Våre kunder <img src="../bilder/001-money.svg" width="20px" height="20px"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li> <a href="../html/om-oss.html">Om oss <img src="../bilder/002-pie-chart-1.svg" width="20px" height="20px"></a>
+                            <ul>
+                                <li><a href="../html/bildegalleri.html">Bilder <img src="../bilder/005-folder.svg" width="20px" height="20px"></a>
+
+                                </li>
+
+                                <li><a href="../html/data.html">Tysvær Datautstyr <img src="../bilder/001-charts.svg" width="20px" height="20px"></a>
+                            </ul>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><a href="../html/bli-kunde.html">Bli kunde <img src="../bilder/004-puzzle.svg" width="20px" height="20px"></a>
+                            <ul>
+                                <li><a href="../html/kundebilder.html">Morgendagens kunder <img src="../bilder/002-handshake.svg" width="20px" height="20px"></a>
+                            </ul>
+                            </li>
+                    </ul>
+
+
+
+                </div>
+            </div>
+
+            <div>
+                <h4>Bli Kunde</h4>
+                <form>
+                    <div>
+                        <div>kundenr</div>
+                        <div><input id="kundenr" type="number" placeholder="1000<x<2000"></div>
+                    </div>
+                    <div>
+                        <div>Fornavn</div>
+                        <div><input id="fornavn" type="text"></div>
+                    </div>
+                    <div>
+                        <div>Etternavn</div>
+                        <div><input id="etternavn" type="text"></div>
+                    </div>
+                    <div>
+                        <div>Alder</div>
+                        <div><input id="alder" type="number"></div>
+                    </div>
+
+
+                    <div>
+                        <div> <button type="button" id="lagrekunde" type="reset">Bli kunde</button>
+                        </div> <br>
+                        <button type="reset" value="Reset">Angre</button>
+                    </div>
+
+                </form>
+                <br> <br><br><br><br><br><br><br>
+                <p><b>NB:</b> for å skjekke kunder, gå på våre kunder og sjekk din saldo.</p>
+            </div>
+
+    </article>
+    <footer id="footer">
+        <table>
+            <tr>
+                <th>Mobilnummer</th>
+                <th>Adresse</th>
+                <th>Epost</th>
+            </tr>
+            <tr>
+                <td> 412 22 132</td>
+                <td> Aksdal sentrum</td>
+                <td>tysvær@bank.no</td>
+            </tr>
+        </table>
+    </footer>
+    <script>
+        setup();
+    </script>
+</body>
+
+</html>

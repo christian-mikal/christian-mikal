@@ -31,25 +31,17 @@ form > label {
 
 
 
-form::after {
-    color:blue;
-    content: "Bestilling";
-    position: absolute;
-    right: 20px;
-    top: -20px;
-}
-
 #lagre {
     background-color: antiquewhite;
 }
 
-.elektroting{
+.elektrovare{
     display:none;
 }
-.klerting{
+.klervare{
     display: none;
 }
 
-.brusting{
+.brusvare{
     display: none;
 }
