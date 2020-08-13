@@ -173,7 +173,7 @@ function setup() {
                 x: 1,
                 y: 1
             };
-            this.mass =1;
+            this.mass = 1;
             this.opacity = 0;
             this.radius = radius;
             this.color = color;
